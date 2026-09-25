@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#14532d">
+<title>桂林 Club Med 度假指南 · 9/27–10/1 · Guilin Club Med Guide</title>
+<style>
+:root{
+  --bg:#f5f3ee;
+  --card:#ffffff;
+  --ink:#1e2622;
+  --ink-2:#4a5650;
+  --ink-3:#7c8781;
+  --line:#e3e0d7;
+  --green:#1b5e4a;
+  --green-d:#12402f;
+  --green-l:#e8f1ec;
+  --gold:#b8862b;
+  --gold-l:#fdf6e6;
+  --red:#b03a2e;
+  --red-l:#fdeeeb;
+  --blue:#1f6f9c;
+  --blue-l:#eaf3f9;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(30,38,34,.05), 0 6px 18px rgba(30,38,34,.06);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size:16px;line-height:1.65;
+}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+
+/* ---------- language switching ---------- */
+.lang-zh,.lang-en{display:none}
+html[data-lang="zh"] .lang-zh{display:block}
+html[data-lang="en"] .lang-en{display:block}
+html[data-lang="zh"] span.lang-zh,
+html[data-lang="en"] span.lang-en{display:inline}
+html[data-lang="zh"] td.lang-zh,html[data-lang="en"] td.lang-en,
+html[data-lang="zh"] th.lang-zh,html[data-lang="en"] th.lang-en{display:table-cell}
+html[data-lang="zh"] li.lang-zh,html[data-lang="en"] li.lang-en{display:list-item}
+/* these two carry styling classes that must stay block-level, so raise specificity above the span rule */
+html[data-lang="zh"] .note>.ttl.lang-zh,
+html[data-lang="en"] .note>.ttl.lang-en{display:block}
+html[data-lang="zh"] .tl-b .var>span.lang-zh,
+html[data-lang="en"] .tl-b .var>span.lang-en{display:block}
+
+/* ---------- header ---------- */
+header{
+  background:linear-gradient(160deg,#12402f 0%,#1b5e4a 52%,#2c7a5c 100%);
+  color:#fff;padding:26px 0 22px;position:relative;overflow:hidden;
+}
+header::after{
+  content:"";position:absolute;inset:auto -40px -70px -40px;height:170px;
+  background:radial-gradient(ellipse at 20% 0%,rgba(255,255,255,.13),transparent 62%),
+             radial-gradient(ellipse at 85% 10%,rgba(184,134,43,.35),transparent 60%);
+  pointer-events:none;
+}
+.h-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;position:relative;z-index:2}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#bfe0cf;font-weight:600}
+h1{margin:6px 0 4px;font-size:23px;line-height:1.32;font-weight:700;letter-spacing:.01em}
+.h-sub{font-size:13.5px;color:#cfe6da;margin:0}
+.langbtn{
+  flex:0 0 auto;display:flex;background:rgba(255,255,255,.14);border-radius:9px;padding:3px;
+  border:1px solid rgba(255,255,255,.28);
+}
+.langbtn button{
+  border:0;background:transparent;color:#dbeee4;font:inherit;font-size:13px;font-weight:600;
+  padding:6px 13px;border-radius:7px;cursor:pointer;transition:.18s;font-family:inherit;
+}
+.langbtn button.on{background:#fff;color:var(--green-d)}
+.h-meta{
+  margin-top:18px;position:relative;z-index:2;display:grid;gap:7px;
+  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
+}
+.h-meta div{font-size:13px;color:#d9ecE3;display:flex;gap:8px}
+.h-meta b{color:#fff;font-weight:600}
+.h-meta .k{color:#9dc9b5;flex:0 0 auto}
+
+/* ---------- nav ---------- */
+nav{
+  position:sticky;top:0;z-index:40;background:rgba(245,243,238,.94);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-in{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;scrollbar-width:none;max-width:900px;margin:0 auto}
+.nav-in::-webkit-scrollbar{display:none}
+.nav-in a{
+  flex:0 0 auto;text-decoration:none;font-size:13px;font-weight:600;color:var(--green-d);
+  background:#fff;border:1px solid var(--line);padding:7px 13px;border-radius:99px;white-space:nowrap;
+}
+.nav-in a:active{background:var(--green-l)}
+
+/* ---------- sections ---------- */
+main{padding:22px 0 60px}
+section{scroll-margin-top:62px;margin-bottom:30px}
+.sec-head{display:flex;align-items:flex-start;gap:12px;margin-bottom:14px}
+.sec-no{
+  flex:0 0 auto;width:34px;height:34px;border-radius:10px;background:var(--green);color:#fff;
+  display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;
+  box-shadow:0 3px 10px rgba(27,94,74,.28);
+}
+.sec-head h2{margin:0;font-size:18.5px;line-height:1.35;font-weight:700;letter-spacing:.01em}
+.sec-head p{margin:3px 0 0;font-size:13px;color:var(--ink-3)}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;margin-bottom:12px}
+.card h3{margin:0 0 4px;font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card h3 .tag{font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--green-l);color:var(--green);border:1px solid #cfe4d9}
+.card h3 .tag.gold{background:var(--gold-l);color:#8a6417;border-color:#f0dfb4}
+.card h3 .tag.red{background:var(--red-l);color:var(--red);border-color:#f6d5cf}
+.card h3 .tag.blue{background:var(--blue-l);color:var(--blue);border-color:#cfe4f0}
+.card .sub{font-size:13px;color:var(--ink-3);margin:0 0 10px}
+
+.row{display:flex;gap:10px;font-size:14px;padding:7px 0;border-top:1px dashed var(--line)}
+.row:first-of-type{border-top:0}
+.row .k{flex:0 0 84px;color:var(--ink-3);font-size:13px;padding-top:1px}
+.row .v{flex:1;min-width:0;color:var(--ink)}
+.row .v b{font-weight:700}
+
+.note{
+  font-size:13.5px;border-radius:10px;padding:10px 12px;margin-top:11px;
+  background:var(--gold-l);border:1px solid #f0dfb4;color:#6d4f11;line-height:1.6;
+}
+.note.green{background:var(--green-l);border-color:#cfe4d9;color:#1a5541}
+.note.red{background:var(--red-l);border-color:#f6d5cf;color:#8b2e23}
+.note.blue{background:var(--blue-l);border-color:#cfe4f0;color:#175a7e}
+.note b{font-weight:700}
+.note .ttl{display:block;font-weight:700;margin-bottom:3px}
+
+ul.tight{margin:8px 0 0;padding-left:19px}
+ul.tight li{font-size:14px;margin-bottom:5px;color:var(--ink-2)}
+ul.tight li b{color:var(--ink)}
+
+.grid2{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(255px,1fr))}
+
+/* ---------- weather ---------- */
+.wx-now{
+  background:linear-gradient(150deg,#1b5e4a,#2c7a5c);color:#fff;border-radius:var(--radius);
+  padding:18px;margin-bottom:12px;position:relative;overflow:hidden;
+}
+.wx-now::after{content:"";position:absolute;right:-30px;top:-30px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 68%)}
+.wx-flex{display:flex;align-items:center;gap:16px;position:relative;z-index:2;flex-wrap:wrap}
+.wx-temp{font-size:52px;font-weight:300;line-height:1;letter-spacing:-.02em}
+.wx-temp sup{font-size:20px;font-weight:400;vertical-align:top;top:6px;position:relative}
+.wx-desc{flex:1;min-width:150px}
+.wx-desc .t{font-size:19px;font-weight:700;margin-bottom:2px}
+.wx-desc .s{font-size:13px;color:#c8e3d5}
+.wx-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:9px;margin-top:15px;position:relative;z-index:2}
+.wx-stats div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.17);border-radius:10px;padding:8px 10px}
+.wx-stats .l{font-size:11px;color:#b9dbcb;letter-spacing:.03em}
+.wx-stats .n{font-size:16px;font-weight:700;margin-top:1px}
+.wx-loading{padding:22px;text-align:center;color:var(--ink-3);font-size:14px}
+.dots::after{content:"";animation:dt 1.2s steps(4,end) infinite}
+@keyframes dt{0%{content:""}25%{content:"·"}50%{content:"··"}75%{content:"···"}}
+
+.wx-days{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));margin-top:2px}
+.wx-day{background:#fff;border:1px solid var(--line);border-radius:11px;padding:10px 6px;text-align:center;position:relative}
+.wx-day.trip{border-color:var(--green);background:var(--green-l);box-shadow:0 0 0 2px rgba(27,94,74,.09)}
+.wx-day .d{font-size:12px;color:var(--ink-3);font-weight:600}
+.wx-day .w{font-size:12px;color:var(--ink-2);margin:4px 0 5px;line-height:1.35;min-height:32px}
+.wx-day .r{font-size:14px;font-weight:700}
+.wx-day .r .lo{color:var(--ink-3);font-weight:500}
+.wx-day .p{font-size:11px;color:var(--blue);margin-top:2px}
+.wx-day .badge{
+  position:absolute;top:-8px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;
+  font-size:10px;padding:1px 7px;border-radius:99px;white-space:nowrap;font-weight:600;
+}
+.wx-hour{display:flex;gap:8px;overflow-x:auto;padding:4px 0 6px;scrollbar-width:none;margin-top:6px}
+.wx-hour::-webkit-scrollbar{display:none}
+.wx-hour div{flex:0 0 auto;min-width:60px;text-align:center;background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 6px}
+.wx-hour .h{font-size:11px;color:var(--ink-3)}
+.wx-hour .t{font-size:15px;font-weight:700;margin:2px 0}
+.wx-hour .p{font-size:10.5px;color:var(--blue)}
+
+/* ---------- tables ---------- */
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px -16px 0;padding:0 16px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:13.5px}
+th,td{border-bottom:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--green-l);color:var(--green-d);font-weight:700;font-size:12.5px;white-space:nowrap;border-bottom:1px solid #cfe4d9}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:#fbfaf7}
+td.c,th.c{text-align:center}
+.pill{display:inline-block;font-size:11px;font-weight:600;padding:1.5px 7px;border-radius:99px;background:var(--green-l);color:var(--green);border:1px solid #cfe4d9;white-space:nowrap}
+.pill.gold{background:var(--gold-l);color:#8a6417;border-color:#f0dfb4}
+.pill.red{background:var(--red-l);color:var(--red);border-color:#f6d5cf}
+.pill.grey{background:#f1f0ec;color:var(--ink-3);border-color:#e3e0d7}
+
+/* ---------- timeline ---------- */
+.tl{position:relative;padding-left:0;margin-top:10px}
+.tl-item{display:flex;gap:12px;padding:9px 0;border-top:1px dashed var(--line)}
+.tl-item:first-child{border-top:0}
+.tl-t{flex:0 0 62px;font-size:13.5px;font-weight:700;color:var(--green);font-variant-numeric:tabular-nums;padding-top:1px}
+.tl-b{flex:1;min-width:0;font-size:14px}
+.tl-b .act{font-weight:600;color:var(--ink)}
+.tl-b .loc{font-size:12.5px;color:var(--ink-3);margin-top:1px}
+.tl-b .var{font-size:13px;color:var(--ink-2);margin-top:4px;background:#fbfaf7;border:1px solid var(--line);border-radius:9px;padding:7px 9px}
+.tl-b .var span{display:block}
+.tl-b .var span b{color:var(--green-d)}
+
+.daychip{display:inline-block;font-size:11.5px;font-weight:600;background:#eef4f0;border:1px solid #d5e6dc;color:var(--green);border-radius:6px;padding:1px 6px;margin:0 2px 2px 0}
+.daychip.miss{background:#f6f5f2;border-color:#e6e3da;color:#a8b0aa}
+
+footer{border-top:1px solid var(--line);padding:22px 0 44px;color:var(--ink-3);font-size:12.5px}
+footer h4{font-size:13px;color:var(--ink-2);margin:0 0 7px}
+footer p{margin:0 0 8px;line-height:1.7}
+.src{font-size:11.5px;color:#9aa39d;line-height:1.75}
+.disc{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px;margin-bottom:12px}
+
+@media (max-width:420px){
+  h1{font-size:20px}
+  .wx-temp{font-size:44px}
+  .row .k{flex:0 0 70px;font-size:12.5px}
+  .tl-t{flex:0 0 54px;font-size:13px}
+}
+@media print{
+  nav,.langbtn{display:none}
+  body{background:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="h-top">
+      <div>
+        <div class="eyebrow lang-zh">家庭度假指南 · 2026</div>
+        <div class="eyebrow lang-en">Family Resort Guide · 2026</div>
+        <h1 class="lang-zh">桂林 Club Med 地中海俱乐部<br>9月27日 – 10月1日 使用手册</h1>
+        <h1 class="lang-en">Club Med Guilin Resort<br>Sept 27 – Oct 1 Trip Handbook</h1>
+        <p class="h-sub lang-zh">实时天气 · 餐厅 · 儿童俱乐部 · 成人项目 · 长青乐俱乐部 · 带 3 岁半孩子的玩法</p>
+        <p class="h-sub lang-en">Live weather · Dining · Kids Club · Adult activities · Golden Moments Club · Things to do with a 3.5-year-old</p>
+      </div>
+      <div class="langbtn">
+        <button id="btn-zh" class="on" onclick="setLang('zh')">中文</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+    <div class="h-meta">
+      <div><span class="k lang-zh">地址</span><span class="k lang-en">Address</span><span><b class="lang-zh">广西桂林市雁山区大埠乡愚自乐园</b><b class="lang-en">Yuzi Paradise, Dabu Township, Yanshan District, Guilin, Guangxi</b></span></div>
+      <div><span class="k lang-zh">前台电话</span><span class="k lang-en">Front Desk</span><span><b>0773-2255000</b> <span class="lang-zh">（24 小时）</span><span class="lang-en">(24h)</span></span></div>
+      <div><span class="k lang-zh">入住 / 退房</span><span class="k lang-en">Check-in / out</span><span><b>15:00 / 11:00</b></span></div>
+      <div><span class="k lang-zh">行程</span><span class="k lang-en">Stay</span><span><b class="lang-zh">9/27 周日 入住 → 10/1 周四 退房（4 晚）</b><b class="lang-en">Sun Sep 27 → Thu Oct 1 (4 nights)</b></span></div>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-in">
+    <a href="#weather"><span class="lang-zh">1 · 天气与着装</span><span class="lang-en">1 · Weather</span></a>
+    <a href="#dining"><span class="lang-zh">2 · 餐厅</span><span class="lang-en">2 · Dining</span></a>
+    <a href="#kids"><span class="lang-zh">3 · 儿童俱乐部</span><span class="lang-en">3 · Kids Club</span></a>
+    <a href="#adults"><span class="lang-zh">4 · 成人项目</span><span class="lang-en">4 · Adults</span></a>
+    <a href="#golden"><span class="lang-zh">5 · 长青乐俱乐部</span><span class="lang-en">5 · Golden Moments</span></a>
+    <a href="#toddler"><span class="lang-zh">6 · 带 3 岁半宝宝</span><span class="lang-en">6 · With a toddler</span></a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ 1. WEATHER ============ -->
+<section id="weather">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">1</div>
+      <div>
+        <h2 class="lang-zh">实时天气与着装建议</h2>
+        <h2 class="lang-en">Live Weather &amp; What to Wear</h2>
+        <p class="lang-zh">数据每次打开页面自动刷新（Open-Meteo 全球气象数据，定位：度假村所在地 25.06°N, 110.27°E）</p>
+        <p class="lang-en">Auto-refreshes each time you open this page (Open-Meteo, at the resort coordinates 25.06°N, 110.27°E)</p>
+      </div>
+    </div>
+
+    <div id="wx-now-box">
+      <div class="card"><div class="wx-loading"><span class="lang-zh">正在获取实时天气</span><span class="lang-en">Loading live weather</span><span class="dots"></span></div></div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">未来几天预报</span><span class="lang-en">Multi-day Forecast</span><span class="tag gold"><span class="lang-zh">绿框＝入住日期</span><span class="lang-en">Green = your stay</span></span></h3>
+      <div id="wx-days" class="wx-days"></div>
+      <div class="note blue" id="wx-hourly-note" style="display:none">
+        <span class="ttl lang-zh">今日逐小时</span><span class="ttl lang-en">Today, hour by hour</span>
+        <div class="wx-hour" id="wx-hour"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">桂林 9 月底 – 10 月初气候背景</span><span class="lang-en">Guilin Climate: Late Sep – Early Oct</span></h3>
+      <div class="row"><div class="k lang-zh">气候</div><div class="k lang-en">Climate</div><div class="v lang-zh">全年温和，气温大致 8–28°C；最佳游玩期 4–10 月。此时段日间约 <b>26–32°C</b>、夜间约 <b>20–24°C</b>，湿度偏高（70–85%），体感闷热。</div><div class="v lang-en">Mild year-round, roughly 8–28°C; best season Apr–Oct. In this window expect about <b>26–32°C</b> by day, <b>20–24°C</b> at night, with high humidity (70–85%) and a muggy feel.</div></div>
+      <div class="row"><div class="k lang-zh">降雨</div><div class="k lang-en">Rain</div><div class="v lang-zh">桂林多雨，秋季仍常有 <b>短时阵雨或雷阵雨</b>，来得快去得也快。建议随身带 <b>折叠伞 / 轻便雨衣</b>，室外项目遇雨会临时调整。</div><div class="v lang-en">Guilin is rainy; autumn still brings <b>short showers or thunderstorms</b>, quick to arrive and quick to pass. Carry a <b>folding umbrella / light rain jacket</b>; outdoor activities are rescheduled when it rains.</div></div>
+      <div class="row"><div class="k lang-zh">日照 / 蚊虫</div><div class="k lang-en">Sun / Mosquitoes</div><div class="v lang-zh">紫外线较强，水面与草地反光明显；傍晚蚊虫较多（村内有沙滩、湖水、绿地）。</div><div class="v lang-en">UV is strong with glare off water and grass; mosquitoes are active around dusk (beach, lake and lawns on site).</div></div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">着装建议</span><span class="lang-en">What to Pack &amp; Wear</span></h3>
+      <div class="note green">
+        <span class="ttl lang-zh">按当日实时气温自动提示</span><span class="ttl lang-en">Live tip based on temperature</span>
+        <span id="wx-tip-zh" class="lang-zh">加载中…</span>
+        <span id="wx-tip-en" class="lang-en">Loading…</span>
+      </div>
+      <ul class="tight">
+        <li class="lang-zh"><b>白天：</b>速干短袖 T 恤 / 透气长裤；防晒帽、墨镜、防晒霜（SPF50+）必备。</li>
+        <li class="lang-en"><b>Daytime:</b> quick-dry T-shirts and breathable trousers; sun hat, sunglasses and SPF50+ sunscreen are essential.</li>
+        <li class="lang-zh"><b>运动项目：</b>必须穿 <b>运动衣 + 运动鞋</b>（园区规定，未着运动服/鞋无法参加）。攀岩需 <b>长裤</b>。</li>
+        <li class="lang-en"><b>Sports:</b> <b>Sportswear and sports shoes are compulsory</b> (you will be turned away otherwise). Climbing requires <b>long trousers</b>.</li>
+        <li class="lang-zh"><b>空中飞人：</b>不要穿裙子，不要穿带纽扣、拉链、皮带的衣服；<b>参加前不要涂防晒霜</b>（会打滑）。</li>
+        <li class="lang-en"><b>Flying trapeze:</b> no skirts, no buttons, zips or belts; <b>do not apply sunscreen before the activity</b> (it makes grips slippery).</li>
+        <li class="lang-zh"><b>泳池 / 戏水：</b>泳衣泳帽、防水袋、快干浴巾；幼儿建议带 <b>游泳尿布</b> 和臂圈（泳池可免费借用臂圈与浴巾）。</li>
+        <li class="lang-en"><b>Pools / water play:</b> swimwear, swim cap, dry bag and a quick-dry towel; for toddlers bring <b>swim nappies</b> and armbands (armbands and towels are free at the pool).</li>
+        <li class="lang-zh"><b>夜间：</b>每晚有 <b>Dress Code 主题着装</b>（常见为蓝、白、红、黑、粉、牛仔、亚洲风情等），自愿参与，建议多带几件不同颜色的衣服与配饰。剧场冷气较足，可备薄外套。</li>
+        <li class="lang-en"><b>Evening:</b> each night has a <b>dress-code theme</b> (blue, white, red, black, pink, denim, Asian elegance, etc.). Participation is optional but fun — pack a few coloured outfits and accessories. The theatre is air-conditioned, so bring a light layer.</li>
+        <li class="lang-zh"><b>其他：</b>驱蚊液、常备药（儿童退烧/腹泻药）、保温水杯（园区驿站可补水）、小推车（5 岁以下强烈建议带）。</li>
+        <li class="lang-en"><b>Also bring:</b> mosquito repellent, basic medicines (fever/diarrhoea for kids), a water bottle (refill stations at the Lounge), and a light stroller (strongly advised under age 5).</li>
+        <li class="lang-zh"><b>雨天备用：</b>室内恒温泳池、室内攀岩、室内空中飞人、VR、篮球/羽毛球/乒乓球、健身房均正常开放，雨天不会无聊。</li>
+        <li class="lang-en"><b>Rainy-day backup:</b> the heated indoor pool, indoor climbing, indoor trapeze, VR, basketball/badminton/table tennis and the gym all stay open — rain does not mean boredom.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. DINING ============ -->
+<section id="dining">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">2</div>
+      <div>
+        <h2 class="lang-zh">餐厅：开放时间 · 特色菜 · 注意事项</h2>
+        <h2 class="lang-en">Dining: Hours · Signature Dishes · What to Note</h2>
+        <p class="lang-zh">一价全包含一日三餐 + 下午茶 + 夜宵 + 酒吧畅饮；凭手环自由进出</p>
+        <p class="lang-en">All-inclusive covers three meals, afternoon tea, late-night snacks and free-flow bars; just show your wristband</p>
+      </div>
+    </div>
+
+    <div class="note red">
+      <span class="ttl lang-zh">最容易被忽略、也最需要提前做的一件事</span>
+      <span class="ttl lang-en">The one thing most guests miss</span>
+      <span class="lang-zh"><b>蒙古餐厅</b>与<b>莲餐厅</b>不每天开放，且<b>不能提前多天预订</b>——须在<b>开放当日早上 07:00 起</b>到 <b>Atelier 主餐厅门口</b>现场登记（部分资料为 08:30 起）。<b>每人限订 4 位（含儿童）</b>，额满即止。建议当天早餐前先去排队。<br>两个餐厅通常轮流开放、不同时开，且以每周活动安排为准——<b>入住当天先到前台或主餐厅问清楚本周哪几天开哪个</b>。</span>
+      <span class="lang-en">The <b>Mongolian BBQ</b> and <b>Lotus</b> restaurants are not open daily and <b>cannot be booked days in advance</b> — you must sign up on the day itself from <b>07:00</b> at the <b>entrance of The Atelier main restaurant</b> (some sources say 08:30). Capacity is <b>4 seats per person, children included</b>, on a first-come basis. Go before breakfast.<br>They usually alternate rather than open on the same day, following the weekly programme — <b>ask Reception or The Atelier on arrival day which nights each one runs</b>.</span>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">Atelier 主餐厅</span><span class="lang-en">The Atelier — Main Restaurant</span><span class="tag"><span class="lang-zh">无需预约</span><span class="lang-en">No booking</span></span></h3>
+      <p class="sub lang-zh">活动中心一楼 · 国际自助 + 中西日韩料理 · 露台直面花园与群山</p>
+      <p class="sub lang-en">Ground floor, Activity Centre · International buffet plus Chinese, Western, Japanese &amp; Korean · Terrace facing gardens and mountains</p>
+      <div class="row"><div class="k lang-zh">早餐</div><div class="k lang-en">Breakfast</div><div class="v"><b>07:00 – 10:00</b></div></div>
+      <div class="row"><div class="k lang-zh">午餐</div><div class="k lang-en">Lunch</div><div class="v"><b>12:00 – 14:00</b></div></div>
+      <div class="row"><div class="k lang-zh">晚餐</div><div class="k lang-en">Dinner</div><div class="v"><b>18:30 – 21:00</b></div></div>
+      <div class="row"><div class="k lang-zh">特色菜</div><div class="k lang-en">Signature</div><div class="v lang-zh"><b>桂林米粉</b>（必吃）、桂林油茶、桂花糕；川菜、粤菜、海南鸡饭、麻辣香锅、日式料理、地中海菜、现烤肉类、甜品台；中晚餐供应免费红白葡萄酒与啤酒。</div><div class="v lang-en"><b>Guilin rice noodles</b> (a must), Guilin oil tea, osmanthus rice cake; Sichuan and Cantonese dishes, Hainanese chicken rice, Japanese, Mediterranean, grilled meats and a dessert bar. Free red/white wine and beer at lunch and dinner.</div></div>
+      <div class="row"><div class="k lang-zh">带娃友好</div><div class="k lang-en">Kid-friendly</div><div class="v lang-zh">设<b>婴儿食物区</b>、儿童餐具与低矮取餐台，孩子可自己取餐；托管期间 G.O 会统一带孩子来此用餐。</div><div class="v lang-en">Baby-food corner, kids' cutlery and low serving counters; children in Kids Club are brought here by their G.O.s at mealtimes.</div></div>
+      <div class="row"><div class="k lang-zh">着装</div><div class="k lang-en">Dress code</div><div class="v lang-zh">休闲；泳装外需加罩衫或 T 恤，男士需穿上衣。</div><div class="v lang-en">Casual; cover up over swimwear, shirt required for men.</div></div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">蒙古餐厅 / 屋顶花园餐厅</span><span class="lang-en">Mongolian / Rooftop Restaurant</span><span class="tag red"><span class="lang-zh">必须当天预约</span><span class="lang-en">Same-day booking only</span></span></h3>
+      <p class="sub lang-zh">Atelier 三楼 · 360° 喀斯特山景 · 炭火蒙古烤肉 + 自助小火锅</p>
+      <p class="sub lang-en">3rd floor of The Atelier · 360° karst mountain views · Charcoal Mongolian BBQ and hot pot</p>
+      <div class="row"><div class="k lang-zh">开放时间</div><div class="k lang-en">Hours</div><div class="v"><b>18:30 – 21:00</b><span class="lang-zh">（不每日开放，按每周活动安排）</span><span class="lang-en"> (not daily; per weekly programme)</span></div></div>
+      <div class="row"><div class="k lang-zh">特色菜</div><div class="k lang-en">Signature</div><div class="v lang-zh"><b>炭火蒙古烤肉</b>（长筷子自选肉与配菜，现烤）、<b>自助小火锅</b>（锅底辣度可调）；肉食爱好者天堂。</div><div class="v lang-en"><b>Charcoal Mongolian BBQ</b> (long chopsticks, build-your-own meat and sides, grilled to order) and <b>hot pot</b> with adjustable spice level.</div></div>
+      <div class="row"><div class="k lang-zh">预约方式</div><div class="k lang-en">How to book</div><div class="v lang-zh"><b>开放当日早上 07:00 起</b>（一说 08:30），在 <b>Atelier 主餐厅门口</b>现场登记；<b>每人限 4 位（含儿童）</b>，额满为止。<br><b>提前多久：</b>无法提前多日预订，只能当天早上抢名额。</div><div class="v lang-en">Sign up in person from <b>07:00</b> on the day (some sources 08:30) at the <b>entrance of The Atelier</b>; <b>4 seats per person incl. children</b>, first come first served.<br><b>How far ahead:</b> same-morning only — no multi-day advance booking.</div></div>
+      <div class="row"><div class="k lang-zh">着装</div><div class="k lang-en">Dress code</div><div class="v lang-zh">Smart casual（休闲但整洁）</div><div class="v lang-en">Smart casual</div></div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">莲餐厅 The Lotus</span><span class="lang-en">The Lotus Restaurant</span><span class="tag red"><span class="lang-zh">必须预约</span><span class="lang-en">Booking required</span></span><span class="tag gold"><span class="lang-zh">部分菜品另收费</span><span class="lang-en">Some items extra</span></span></h3>
+      <p class="sub lang-zh">HOMA 夏朵酒店后方 · 莲花主题设计 · 精致中式 + 西餐融合</p>
+      <p class="sub lang-en">Behind the HOMA building · Lotus-themed decor · Refined Chinese and Western fusion</p>
+      <div class="row"><div class="k lang-zh">开放时间</div><div class="k lang-en">Hours</div><div class="v"><b>18:30 – 21:00</b><span class="lang-zh">（不定期开放，按每周活动安排；部分资料含晚午餐时段）</span><span class="lang-en"> (intermittent; per weekly programme; some sources also list a late-lunch service)</span></div></div>
+      <div class="row"><div class="k lang-zh">特色菜</div><div class="k lang-en">Signature</div><div class="v lang-zh">简约精致的<b>当地中式美味与西餐</b>（中西融合菜）、开胃菜 + 浓汤 + 主菜套餐式；环境安静优雅，适合家庭正式一餐。</div><div class="v lang-en">Refined <b>local Chinese and Western</b> cooking, set-menu style (starter, soup, main); quiet and elegant — good for a proper family dinner.</div></div>
+      <div class="row"><div class="k lang-zh">预约方式</div><div class="k lang-en">How to book</div><div class="v lang-zh">与蒙古餐厅同一登记点：<b>开放当日早上 07:00 起，Atelier 主餐厅门口</b>；每人限 4 位（含儿童）。部分渠道资料称需 <b>提前一天</b> 预订——<b>两种说法并存，请以入住当天前台/主餐厅告知为准</b>。</div><div class="v lang-en">Same sign-up point as the Mongolian restaurant: from <b>07:00 on the day at The Atelier entrance</b>, 4 seats per person incl. children. Some sources say <b>one day ahead</b> — <b>the two accounts differ, so confirm with Reception or The Atelier on arrival</b>.</div></div>
+      <div class="row"><div class="k lang-zh">着装</div><div class="k lang-en">Dress code</div><div class="v lang-zh">Smart casual</div><div class="v lang-en">Smart casual</div></div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">面吧 Noodle Bar</span><span class="lang-en">The Noodle Bar</span><span class="tag"><span class="lang-zh">无需预约</span><span class="lang-en">No booking</span></span></h3>
+      <p class="sub lang-zh">丽庭酒店一楼 · 全天营业时间最长的一站 · 错过正餐的救星</p>
+      <p class="sub lang-en">Ground floor, Liting building · The longest-serving venue · Your rescue when you miss a meal</p>
+      <div class="row"><div class="k lang-zh">开放时间</div><div class="k lang-en">Hours</div><div class="v"><b>14:00 – 18:00 / 21:00 – 23:30</b><span class="lang-zh">（部分资料写作 14:00–23:30 连续开放）</span><span class="lang-en"> (some sources list a continuous 14:00–23:30)</span></div></div>
+      <div class="row"><div class="k lang-zh">特色菜</div><div class="k lang-en">Signature</div><div class="v lang-zh"><b>桂林米粉</b>（卤菜粉 / 汤粉，现做现煮）、<b>台式红烧牛肉面</b>、京城炸酱面及各地方特色面食；很多住客把它列为村内最爱。</div><div class="v lang-en"><b>Guilin rice noodles</b> (braised or soup, cooked to order), <b>Taiwanese braised beef noodles</b>, Beijing zhajiang noodles and regional specialities — many guests rank this as their favourite spot.</div></div>
+      <div class="row"><div class="k lang-zh">着装</div><div class="k lang-en">Dress code</div><div class="v lang-zh">休闲</div><div class="v lang-en">Casual</div></div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3><span class="lang-zh">Atelier 主吧台</span><span class="lang-en">The Atelier Bar</span></h3>
+        <div class="row"><div class="k lang-zh">时间</div><div class="k lang-en">Hours</div><div class="v"><b>09:30 – 23:00</b></div></div>
+        <div class="row"><div class="k lang-zh">特色</div><div class="k lang-en">Offer</div><div class="v lang-zh">咖啡、鲜榨果汁、鸡尾酒（含<b>无酒精鸡尾酒</b>）、软饮、当地烈酒；定时供应甜点与水果；<b>小朋友有专属菜单</b>。可要求调酒师按口味定制。</div><div class="v lang-en">Coffee, fresh juice, cocktails (<b>including zero-alcohol versions</b>), soft drinks and local spirits; pastries and fruit served at set times; <b>children have their own menu</b>. Ask the bartender to customise.</div></div>
+        <div class="row"><div class="k lang-zh">备注</div><div class="k lang-en">Note</div><div class="v lang-zh">临近剧场，晚间演出前后最热闹；旁边有台球、麻将与 KTV 房。</div><div class="v lang-en">Next to the theatre and busiest around the evening show; pool table, mahjong and KTV rooms nearby.</div></div>
+      </div>
+      <div class="card">
+        <h3><span class="lang-zh">泳池吧 · 照月吧</span><span class="lang-en">Poolside Bar · Moon Bar</span></h3>
+        <div class="row"><div class="k lang-zh">泳池吧</div><div class="k lang-en">Pool bar</div><div class="v"><b>13:00 – 18:00</b><span class="lang-zh">（约 5–10 月开放，随泳池时段）</span><span class="lang-en"> (approx. May–Oct, during pool hours)</span></div></div>
+        <div class="row"><div class="k lang-zh">照月吧</div><div class="k lang-en">Moon bar</div><div class="v"><b>10:00 – 22:00</b><span class="lang-zh">（HOMA 楼，成人 12+；香槟与雪茄需另付）</span><span class="lang-en"> (HOMA building, 12+; champagne and cigars cost extra)</span></div></div>
+        <div class="row"><div class="k lang-zh">特色</div><div class="k lang-en">Offer</div><div class="v lang-zh">Mojito 等清爽特调、轻食小点；泳池吧是午后消暑首选，照月吧适合安静的下午茶与红酒。</div><div class="v lang-en">Refreshing specials such as mojitos plus light snacks; the pool bar for hot afternoons, Moon Bar for a quiet tea or glass of wine.</div></div>
+      </div>
+    </div>
+
+    <div class="note">
+      <span class="ttl lang-zh">通用提醒</span><span class="ttl lang-en">General reminders</span>
+      <span class="lang-zh">① 正餐以外如需额外加餐，请联系前台，另行付费。② 所有餐厅/酒吧均在营业时间内<b>不限次数</b>进出。③ 请注意节约食物，先少量取用。④ 高档酒水、精品店、洗衣、SPA、村外游为付费项目。⑤ 以上时间为公开资料整理，<b>实际以度假村当日公告与「我的 Club Med」小程序为准</b>。</span>
+      <span class="lang-en">① Extra meals outside regular service can be arranged with Reception at a charge. ② All restaurants and bars allow <b>unlimited re-entry</b> during opening hours. ③ Please avoid food waste — take small portions first. ④ Premium drinks, boutique, laundry, spa and off-site excursions are chargeable. ⑤ Hours above are compiled from public sources; <b>the resort's daily notice and the "My Club Med" mini-program are authoritative</b>.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. KIDS CLUB ============ -->
+<section id="kids">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">3</div>
+      <div>
+        <h2 class="lang-zh">儿童俱乐部（迷你俱乐部 · 4–10 岁托管）</h2>
+        <h2 class="lang-en">Kids Club (Mini Club Med · Ages 4–10)</h2>
+        <p class="lang-zh">一价全包内免费托管 · 独栋带院子的「森林自然学校」</p>
+        <p class="lang-en">Included free in your package · A standalone garden building, like a nature school in the woods</p>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3><span class="lang-zh">报名与集合（重点）</span><span class="lang-en">Sign-up &amp; Drop-off (key info)</span></h3>
+        <div class="row"><div class="k lang-zh">报名年龄</div><div class="k lang-en">Ages</div><div class="v"><b>4 – 10 周岁</b><span class="lang-zh">（分 4–7 岁、8–10 岁两组）</span><span class="lang-en"> (split into 4–7 and 8–10 groups)</span></div></div>
+        <div class="row"><div class="k lang-zh">费用</div><div class="k lang-en">Cost</div><div class="v lang-zh"><b>一价全包含，免费托管</b>，无需额外付费</div><div class="v lang-en"><b>Included free</b> in your all-inclusive package</div></div>
+        <div class="row"><div class="k lang-zh">报名时间</div><div class="k lang-en">Sign-up time</div><div class="v"><b>08:30 – 09:00</b><span class="lang-zh">（部分资料 08:45–09:15）</span><span class="lang-en"> (some sources 08:45–09:15)</span></div></div>
+        <div class="row"><div class="k lang-zh">报名地点</div><div class="k lang-en">Sign-up place</div><div class="v"><b>迷你俱乐部（Mini Club）</b><span class="lang-zh">本体，独栋带院子</span><span class="lang-en"> itself — the standalone garden building</span></div></div>
+        <div class="row"><div class="k lang-zh">要提前多久</div><div class="k lang-en">How far ahead</div><div class="v lang-zh"><b>不需要提前多日预约</b>：入住时填写表格申请即可。建议<b>抵达当天（9/27）放好行李后就去迷你俱乐部登记</b>，顺便问清本周排期；此后每天 08:30 直接送去即可，可随时签入签出。</div><div class="v lang-en"><b>No multi-day advance booking needed</b> — just complete the form at check-in. Best practice: <b>register at the Mini Club on arrival day (Sep 27)</b> and ask about the week's schedule. From then on simply drop off at 08:30; you may sign in and out at any time.</div></div>
+        <div class="row"><div class="k lang-zh">集合时间/地点</div><div class="k lang-en">Meet point</div><div class="v lang-zh"><b>早上 08:30 直接在迷你俱乐部集合</b>（G.O 会在门口迎接）。晚间场 <b>18:30</b> 在 <b>Atelier 活动中心一楼</b>集合。</div><div class="v lang-en"><b>08:30 at the Mini Club itself</b> (G.O.s greet children at the door). Evening session gathers at <b>18:30 in the ground floor of the Atelier Activity Centre</b>.</div></div>
+        <div class="row"><div class="k lang-zh">托管时长</div><div class="k lang-en">Hours</div><div class="v lang-zh"><b>08:30 – 17:00</b>（午餐、下午茶由 G.O 统一带领）；<b>晚间 18:30 – 20:15</b>（儿童秀）。</div><div class="v lang-en"><b>08:30 – 17:00</b> (lunch and afternoon tea supervised by G.O.s); <b>evening 18:30 – 20:15</b> (kids' show).</div></div>
+      </div>
+
+      <div class="card">
+        <h3><span class="lang-zh">家长必读</span><span class="lang-en">Parents' Checklist</span></h3>
+        <ul class="tight">
+          <li class="lang-zh"><b>17:00 之后托管另收费：200 元 / 小时 / 人</b>。请准时接回。</li>
+          <li class="lang-en"><b>Care after 17:00 is charged at CNY 200 per hour per child.</b> Please collect on time.</li>
+          <li class="lang-zh"><b>每天要带：</b>运动鞋、袜子、泳衣（几乎每天都有游泳环节）、水杯、防晒帽/防晒衣。<b>泳衣和运动鞋最容易忘。</b></li>
+          <li class="lang-en"><b>Bring daily:</b> sports shoes, socks, swimwear (swimming features almost every day), water bottle, sun hat / UV shirt. <b>Swimwear and trainers are the two most-forgotten items.</b></li>
+          <li class="lang-zh"><b>建议不带</b>私人玩具与电子产品，G.O 不负责保管；园区提供毛巾与饮用水。</li>
+          <li class="lang-en"><b>Please leave at home</b> personal toys and electronics; G.O.s cannot look after them. Towels and drinking water are provided.</li>
+          <li class="lang-zh"><b>分流规则：</b>4 岁以下<b>不能</b>进迷你俱乐部，需付费报「小小俱乐部」（2–3 岁）。11 岁以上转青少年俱乐部。</li>
+          <li class="lang-en"><b>Age rules:</b> under 4s <b>cannot</b> join Mini Club and need the paid Petit Club (2–3). Ages 11+ move to the Teens Club.</li>
+          <li class="lang-zh"><b>若孩子当天未托管，安全与看管由家长负责。</b></li>
+          <li class="lang-en"><b>On days your child is not in the club, supervision is the parents' responsibility.</b></li>
+          <li class="lang-zh"><b>换洗衣物多备一套：</b>戏水、手工、户外探索都可能弄湿或弄脏。</li>
+          <li class="lang-en"><b>Pack a spare set of clothes:</b> water play, crafts and outdoor exploration all get messy.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">每日项目安排（周一 – 周日 通用版）</span><span class="lang-en">Daily Programme (Mon – Sun template)</span></h3>
+      <p class="sub lang-zh">迷你俱乐部为<b>每周轮转制</b>，不是按「第几天」分配。你的行程落在 <span class="daychip">周日 9/27</span><span class="daychip">周一 9/28</span><span class="daychip">周二 9/29</span><span class="daychip">周三 9/30</span><span class="daychip">周四 10/1</span>。<br>其中 <b>9/27 是 15:00 之后才入住</b>，当天基本赶不上托管；<b>10/1 是退房日</b>，通常只到 17:00 前。真正完整的托管日是 <b>9/28 – 9/30 三天</b>。</p>
+      <p class="sub lang-en">The Mini Club runs on a <b>weekly rotation</b>, not a day-by-day itinerary. Your stay covers <span class="daychip">Sun 9/27</span><span class="daychip">Mon 9/28</span><span class="daychip">Tue 9/29</span><span class="daychip">Wed 9/30</span><span class="daychip">Thu 10/1</span>.<br><b>Sep 27 is a 15:00 check-in</b> so Kids Club is impractical that day, and <b>Oct 1 is departure day</b>. Your three full Kids Club days are <b>Sep 28 – Sep 30</b>.</p>
+
+      <div class="tl">
+        <div class="tl-item"><div class="tl-t">08:30</div><div class="tl-b"><div class="act lang-zh">欢迎来到迷你俱乐部</div><div class="act lang-en">Welcome to Mini Club Med+</div><div class="loc lang-zh">@ 迷你俱乐部</div><div class="loc lang-en">@ Mini Club</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">09:00</div><div class="tl-b"><div class="act lang-zh">空中飞人 / 蹦床 · 空中飞人 / 攀岩</div><div class="act lang-en">Flying trapeze / trampoline · Trapeze / wall climbing</div><div class="loc lang-zh">4–5 岁：空中飞人 + 蹦床｜6–10 岁：空中飞人 + 攀岩 @ 室内运动场 La Lantern</div><div class="loc lang-en">Ages 4–5: trapeze + trampoline | Ages 6–10: trapeze + climbing @ Indoor sports hall, La Lantern</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">10:00</div><div class="tl-b"><div class="act lang-zh">软式射箭 / 自然探索 · 射箭 / 体育游戏</div><div class="act lang-en">Soft archery / nature exploration · Archery / sport games</div><div class="loc lang-zh">4–5 岁：软式射箭 + 自然探索｜6–10 岁：射箭 + 体育游戏 @ 射箭场</div><div class="loc lang-en">Ages 4–5: soft archery + nature exploration | Ages 6–10: archery + sport games @ Archery area</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">11:00</div><div class="tl-b">
+          <div class="act lang-zh">按星期轮换的特色活动</div><div class="act lang-en">Rotating daily activity</div>
+          <div class="var">
+            <span class="lang-zh"><b>周一</b> 自然美育手工 @迷你俱乐部 · <b>周二</b> 鸭鸭喂食 @沙滩旁 · <b>周三</b> 迷你尊巴 @迷你俱乐部 · <b>周四</b> 鸭鸭喂食 @沙滩旁 · <b>周五</b> 手链制作 @迷你俱乐部 · <b>周六</b> 鸭鸭喂食 @沙滩旁 · <b>周日</b> 故事瑜伽 @迷你俱乐部</span>
+            <span class="lang-en"><b>Mon</b> Nature art &amp; craft @Mini Club · <b>Tue</b> Duck feeding @Beside the beach · <b>Wed</b> Mini Zumba @Mini Club · <b>Thu</b> Duck feeding @Beside the beach · <b>Fri</b> Bracelet making @Mini Club · <b>Sat</b> Duck feeding @Beside the beach · <b>Sun</b> Story yoga @Mini Club</span>
+          </div>
+          <div class="loc lang-zh">鸭鸭喂食是招牌免费活动，每周多次在小桥/沙滩旁进行，孩子一人一瓶饲料，鸭子温顺亲近人。</div>
+          <div class="loc lang-en">Duck feeding is the signature free activity, run several times a week by the little bridge / beach — each child gets a bottle of feed and the ducks are remarkably tame.</div>
+        </div></div>
+
+        <div class="tl-item"><div class="tl-t">11:45</div><div class="tl-b"><div class="act lang-zh">快乐午餐时光</div><div class="act lang-en">Happy Lunch</div><div class="loc lang-zh">@ 主餐厅（G.O 带领，孩子单独区域用餐）</div><div class="loc lang-en">@ Main restaurant (children eat in their own area with G.O.s)</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">12:45</div><div class="tl-b"><div class="act lang-zh">能量补给 / 休息时间</div><div class="act lang-en">Energy Booster / rest</div><div class="loc">@ 迷你俱乐部</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">14:00</div><div class="tl-b"><div class="act lang-zh">游泳 + 创意手工 / 团队游戏</div><div class="act lang-en">Swimming + crafts / team games</div><div class="loc lang-zh">游泳 @ 室内泳池（几乎每天）；手工与游戏按日轮换：小小设计师 · 海洋艺术 · 爆米花创意手工 · 框架制作 · 兔子灯笼 · 自然美育手工 · 彩虹跳跳；游戏：旋珠奇行 · 小小园艺师 · 疯狂接力赛 · 快乐卡片</div><div class="loc lang-en">Swimming @ indoor pool (almost daily); crafts and games rotate by day: Little Designer · Ocean Art · Popcorn Craft · Frame Making · Rabbit Lantern · Nature Art &amp; Craft · Rainbow Bounce; games: Let's Roll · Little Gardener · Crazy Relay · Happy Card</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">15:00</div><div class="tl-b">
+          <div class="act lang-zh">团队游戏 / 舞动时间</div><div class="act lang-en">Team game / dancing</div>
+          <div class="var">
+            <span class="lang-zh"><b>周一</b> 我是老板 · <b>周二</b> 最佳领航员 · <b>周三</b> 大大毛毛虫 · <b>周四</b> 天天向上 · <b>周五</b> 英雄游击队 · <b>周六</b> 心情舞动派对 · <b>周日</b> 自信大步走</span>
+            <span class="lang-en"><b>Mon</b> Be the Boss · <b>Tue</b> Super Pilot · <b>Wed</b> Giant Caterpillar · <b>Thu</b> Up Up Up · <b>Fri</b> Hero Parade · <b>Sat</b> Move Like You Feel · <b>Sun</b> Chin Up</span>
+          </div>
+        </div></div>
+
+        <div class="tl-item"><div class="tl-t">15:30</div><div class="tl-b"><div class="act lang-zh">快乐下午茶</div><div class="act lang-en">Happy Teatime</div><div class="loc">@ 主餐厅</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">16:15</div><div class="tl-b"><div class="act lang-zh">每日特别活动</div><div class="act lang-en">Special Event</div><div class="loc lang-zh">请查阅当日「每日活动表」</div><div class="loc lang-en">See the Daily Programme sheet</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">17:00</div><div class="tl-b"><div class="act lang-zh">接回时间（欢乐回家，晚上见）</div><div class="act lang-en">Pick-up time — see you tonight</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">19:30</div><div class="tl-b"><div class="act lang-zh">晚间特别活动 / 儿童秀准备</div><div class="act lang-en">Evening special event / kids' show prep</div><div class="loc lang-zh">@ Atelier 活动中心一楼集合</div><div class="loc lang-en">@ Ground floor, Atelier Activity Centre</div></div></div>
+
+        <div class="tl-item"><div class="tl-t">20:15</div><div class="tl-b"><div class="act lang-zh">明天见（接回）</div><div class="act lang-en">Pick-up — see you tomorrow</div></div></div>
+      </div>
+
+      <div class="note">
+        <span class="ttl lang-zh">关于这张表的说明</span><span class="ttl lang-en">About this schedule</span>
+        <span class="lang-zh">以上为公开活动表整理的<b>通用周排期</b>。实际上每天的时段顺序、场地与项目都会根据<b>天气和孩子意愿</b>临时调整，且度假村会在<b>迷你俱乐部门口张贴当日活动表</b>、在「我的 Club Med」小程序同步更新。<b>请以当日公告为准</b>——本项目内含的细节较多，个别项目名称在不同版本资料中存在差异，已按可核验的一致部分呈现。</span>
+        <span class="lang-en">This is the <b>generic weekly template</b> compiled from published programmes. In practice the order, venues and activities shift daily with <b>weather and children's preferences</b>; the resort posts the day's sheet <b>at the Mini Club door</b> and updates it in the "My Club Med" mini-program. <b>Treat the daily notice as authoritative.</b> Some activity names differ between published versions; only consistent details have been shown here.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. ADULTS ============ -->
+<section id="adults">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">4</div>
+      <div>
+        <h2 class="lang-zh">成人可参加的一价全包项目</h2>
+        <h2 class="lang-en">All-Inclusive Activities for Adults</h2>
+        <p class="lang-zh">30+ 项水陆运动与休闲 · 全部含在房费内 · 凭手环参加</p>
+        <p class="lang-en">30+ land and water activities, all included, just show your wristband</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">运动与课程</span><span class="lang-en">Sports &amp; Classes</span></h3>
+      <div class="tw">
+        <table>
+          <thead><tr>
+            <th class="lang-zh">项目</th><th class="lang-en">Activity</th>
+            <th class="lang-zh">时间</th><th class="lang-en">Time</th>
+            <th class="lang-zh">地点</th><th class="lang-en">Venue</th>
+            <th class="lang-zh">着装 / 年龄</th><th class="lang-en">Dress / Age</th>
+            <th class="lang-zh">预约</th><th class="lang-en">Booking</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td class="lang-zh"><b>空中飞人</b><span class="pill gold">招牌</span></td><td class="lang-en"><b>Flying Trapeze</b><span class="pill gold">Signature</span></td>
+              <td class="lang-zh">11 岁以上及成人 <b>15:00 – 17:00</b><br>进阶对接 16:30 – 17:00</td><td class="lang-en">Ages 11+ &amp; adults <b>15:00 – 17:00</b><br>Advanced catch 16:30 – 17:00</td>
+              <td class="lang-zh">室内运动场 La Lantern / 室外</td><td class="lang-en">Indoor sports hall La Lantern / outdoor</td>
+              <td class="lang-zh">不穿裙子；<b>无纽扣、拉链、皮带</b>；<b>勿涂防晒霜</b>；须有 G.O 保护</td><td class="lang-en">No skirts; <b>no buttons, zips or belts</b>; <b>no sunscreen beforehand</b>; G.O. belay provided</td>
+              <td class="lang-zh">现场按时段参加</td><td class="lang-en">Walk-in at session time</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>攀岩（室内 / 真山）</b><span class="pill gold">招牌</span></td><td class="lang-en"><b>Climbing (indoor / real rock)</b><span class="pill gold">Signature</span></td>
+              <td class="lang-zh"><b>09:00 – 12:00 / 14:00 – 17:00</b><br>真山攀岩下午 14:00 起（视天气）</td><td class="lang-en"><b>09:00 – 12:00 / 14:00 – 17:00</b><br>Real-rock from 14:00 (weather permitting)</td>
+              <td class="lang-zh">室内攀岩馆 / 室外天然岩壁</td><td class="lang-en">Indoor wall / outdoor karst cliff</td>
+              <td class="lang-zh">11 岁以上；<b>须穿长裤</b> + 运动鞋</td><td class="lang-en">Ages 11+; <b>long trousers</b> + sports shoes</td>
+              <td class="lang-zh">现场报名，每 15 分钟一位</td><td class="lang-en">Sign up on site, one climber every 15 min</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>射箭</b></td><td class="lang-en"><b>Archery</b></td>
+              <td class="lang-zh"><b>09:00 – 12:00 / 14:00 – 17:00</b></td><td class="lang-en"><b>09:00 – 12:00 / 14:00 – 17:00</b></td>
+              <td class="lang-zh">室外射箭场（设儿童区）</td><td class="lang-en">Outdoor archery range (kids' zone available)</td>
+              <td class="lang-zh">6 岁以上；运动鞋</td><td class="lang-en">Ages 6+; sports shoes</td>
+              <td class="lang-zh">无需预约</td><td class="lang-en">No booking</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>高尔夫（9 洞练习场）</b></td><td class="lang-en"><b>Golf (9-hole practice)</b></td>
+              <td class="lang-zh"><b>09:00 – 12:00 / 14:00 – 17:00</b><br>儿童初级课 09:00，晋级课 14:00</td><td class="lang-en"><b>09:00 – 12:00 / 14:00 – 17:00</b><br>Kids' beginners 09:00, advanced 14:00</td>
+              <td class="lang-zh">高尔夫球场（含推杆果岭、练习沙坑）</td><td class="lang-en">Golf course (putting green, practice bunker)</td>
+              <td class="lang-zh">8 岁以上；运动鞋或高尔夫球鞋</td><td class="lang-en">Ages 8+; sports or golf shoes</td>
+              <td class="lang-zh">无需预约；私教 400 元/小时需洽 G.O</td><td class="lang-en">No booking; private lesson CNY 400/h via a G.O.</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>山地单车</b></td><td class="lang-en"><b>Mountain Biking</b></td>
+              <td class="lang-zh">周一 / 三 / 五 / 日<br>初级 <b>10:00</b>、<b>14:30</b>；进阶 <b>16:00</b></td><td class="lang-en">Mon / Wed / Fri / Sun<br>Beginner <b>10:00</b> &amp; <b>14:30</b>; advanced <b>16:00</b></td>
+              <td class="lang-zh">单车角集合（近攀岩区）</td><td class="lang-en">Meet at the Bike Corner (near climbing)</td>
+              <td class="lang-zh">11 岁以上；<b>运动鞋</b>；提前 15 分钟报到</td><td class="lang-en">Ages 11+; <b>sports shoes</b>; report 15 min early</td>
+              <td class="lang-zh"><b>需提前一天 19:30 在餐厅门口报名</b></td><td class="lang-en"><b>Sign up the day before, 19:30 at the restaurant entrance</b></td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>自然健走 / 徒步</b></td><td class="lang-en"><b>Nature Walk / Hiking</b></td>
+              <td class="lang-zh"><b>09:15</b> 出发</td><td class="lang-en">Departs <b>09:15</b></td>
+              <td class="lang-zh">驿站集合（提前 5–10 分钟）</td><td class="lang-en">Meet at the Lounge (5–10 min early)</td>
+              <td class="lang-zh">8 岁以上；运动鞋</td><td class="lang-en">Ages 8+; sports shoes</td>
+              <td class="lang-zh">无需预约</td><td class="lang-en">No booking</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>太极</b></td><td class="lang-en"><b>Tai Chi</b></td>
+              <td class="lang-zh">高级 <b>09:00</b>｜中级 <b>11:00</b>｜初级 <b>16:00</b></td><td class="lang-en">Advanced <b>09:00</b> | Intermediate <b>11:00</b> | Beginners <b>16:00</b></td>
+              <td class="lang-zh">驿站（雨天移至瑜伽室）</td><td class="lang-en">The Lounge (moves to yoga room if wet)</td>
+              <td class="lang-zh">11 岁以上；宽松衣物</td><td class="lang-en">Ages 11+; loose clothing</td>
+              <td class="lang-zh">无需预约</td><td class="lang-en">No booking</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>瑜伽</b></td><td class="lang-en"><b>Yoga</b></td>
+              <td class="lang-zh">阴瑜伽 <b>09:30</b>｜哈他 <b>15:00</b>｜流瑜伽 <b>17:00</b><br>周日休息</td><td class="lang-en">Yin <b>09:30</b> | Hatha <b>15:00</b> | Flow <b>17:00</b><br>Closed Sundays</td>
+              <td class="lang-zh">SPA 中心二楼 / 驿站二楼</td><td class="lang-en">Spa 2F / Lounge 2F</td>
+              <td class="lang-zh">11 岁以上；瑜伽服或运动服</td><td class="lang-en">Ages 11+; yoga or sportswear</td>
+              <td class="lang-zh">无需预约</td><td class="lang-en">No booking</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>舞蹈课（尊巴 / 健美 / 有氧伸展）</b></td><td class="lang-en"><b>Dance (Zumba / fitness / stretch)</b></td>
+              <td class="lang-zh">尊巴 <b>11:30</b>｜健美舞蹈、有氧伸展 <b>16:00</b></td><td class="lang-en">Zumba <b>11:30</b> | fitness &amp; stretch <b>16:00</b></td>
+              <td class="lang-zh">主吧台 / 健身中心</td><td class="lang-en">Main bar / Fitness Centre</td>
+              <td class="lang-zh">运动服 + 运动鞋</td><td class="lang-en">Sportswear + sports shoes</td>
+              <td class="lang-zh">无需预约</td><td class="lang-en">No booking</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>球类与健身</b></td><td class="lang-en"><b>Ball Sports &amp; Gym</b></td>
+              <td class="lang-zh">健身中心 <b>08:00 – 21:00</b>；球类 09:00–12:00 / 14:00–17:00</td><td class="lang-en">Gym <b>08:00 – 21:00</b>; ball sports 09:00–12:00 / 14:00–17:00</td>
+              <td class="lang-zh">室内综合运动场（900㎡，含匹克球、板式网球）、健身中心</td><td class="lang-en">900 m² indoor sports hall (pickleball, padel), Fitness Centre</td>
+              <td class="lang-zh">网球 / 羽毛球 / 乒乓球 / 篮球 / 足球 / 沙滩排球；球拍球可免费租借，<b>运动鞋自备</b></td><td class="lang-en">Tennis, badminton, table tennis, basketball, football, beach volleyball; rackets and balls free to borrow, <b>bring your own shoes</b></td>
+              <td class="lang-zh">驿站租借 09:00–12:00 / 14:00–17:00</td><td class="lang-en">Borrow at the Lounge 09:00–12:00 / 14:00–17:00</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>足球高尔夫 Footgolf</b></td><td class="lang-en"><b>Footgolf</b></td>
+              <td class="lang-zh"><b>09:00 – 12:00 / 14:00 – 17:00</b></td><td class="lang-en"><b>09:00 – 12:00 / 14:00 – 17:00</b></td>
+              <td class="lang-zh">驿站租球</td><td class="lang-en">Borrow a ball at the Lounge</td>
+              <td class="lang-zh">全年龄段；运动鞋</td><td class="lang-en">All ages; sports shoes</td>
+              <td class="lang-zh">无需预约</td><td class="lang-en">No booking</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>泳池</b></td><td class="lang-en"><b>Pools</b></td>
+              <td class="lang-zh">室外主泳池 <b>09:00–12:00 / 15:00–19:00</b><br>室内泳池 <b>09:00–12:00 / 13:00–17:00</b></td><td class="lang-en">Outdoor main pool <b>09:00–12:00 / 15:00–19:00</b><br>Indoor pool <b>09:00–12:00 / 13:00–17:00</b></td>
+              <td class="lang-zh">室外天然泳池（夏季开放，0.75–1.2m）、室内恒温泳池、静池（仅成人）</td><td class="lang-en">Outdoor natural pool (summer, 0.75–1.2 m), heated indoor pool, Zen pool (adults only)</td>
+              <td class="lang-zh">泳衣；泳池可免费借浴巾与臂圈</td><td class="lang-en">Swimwear; towels and armbands free at the pool</td>
+              <td class="lang-zh">无需预约；私教 0.5h 150 元</td><td class="lang-en">No booking; private coaching CNY 150 / 30 min</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>VR 体验</b></td><td class="lang-en"><b>VR Zone</b></td>
+              <td class="lang-zh">随室内运动场开放时间</td><td class="lang-en">During indoor sports hall hours</td>
+              <td class="lang-zh">室内综合运动场（2 台 HTC VR）</td><td class="lang-en">Indoor sports hall (2 HTC VR rigs)</td>
+              <td class="lang-zh">30 多种游戏，大人孩子都适合</td><td class="lang-en">30+ games, great for adults and kids</td>
+              <td class="lang-zh">现场排队</td><td class="lang-en">Queue on site</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>KTV / 麻将 / 台球</b></td><td class="lang-en"><b>KTV / Mahjong / Billiards</b></td>
+              <td class="lang-zh">随吧台营业时间（09:30–23:00）</td><td class="lang-en">During bar hours (09:30–23:00)</td>
+              <td class="lang-zh">主吧台旁</td><td class="lang-en">Beside the main bar</td>
+              <td class="lang-zh">休闲</td><td class="lang-en">Casual</td>
+              <td class="lang-zh"><b>KTV 需至吧台预约</b>（部分资料称提前 5 小时）</td><td class="lang-en"><b>KTV must be booked at the bar</b> (some sources say 5 h ahead)</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>晚间表演秀 &amp; 主题派对</b></td><td class="lang-en"><b>Evening Show &amp; Theme Party</b></td>
+              <td class="lang-zh">每晚 <b>20:15</b> 起，派对延续至吧台</td><td class="lang-en">Nightly from <b>20:15</b>, party continues at the bar</td>
+              <td class="lang-zh">剧场 / 泳池甲板 / 主吧台</td><td class="lang-en">Theatre / pool deck / main bar</td>
+              <td class="lang-zh"><b>当晚 Dress Code 主题着装</b>（自愿）</td><td class="lang-en"><b>Dress-code theme of the night</b> (optional)</td>
+              <td class="lang-zh">无需预约</td><td class="lang-en">No booking</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3><span class="lang-zh">需额外付费的项目</span><span class="lang-en">Chargeable Extras</span></h3>
+        <ul class="tight">
+          <li class="lang-zh"><b>SPA（Comfort Zone）</b>：11:00–23:00，面部/全身护理、按摩、美甲修趾；<b>需提前致电水疗预约</b>（分机 5004）。</li>
+          <li class="lang-en"><b>Spa (Comfort Zone)</b>: 11:00–23:00, facials, body treatments, massage, manicure/pedicure; <b>call the spa to book ahead</b> (ext. 5004).</li>
+          <li class="lang-zh"><b>艺术中心手工</b>：草木染、陶艺、画扇、串珠、木艺、手工皂、植物拓印等（09:00–12:00 / 13:00–18:00，分机 5900）。</li>
+          <li class="lang-en"><b>Art Centre workshops</b>: botanical dyeing, pottery, fan painting, beadwork, woodcraft, soap making, leaf printing (09:00–12:00 / 13:00–18:00, ext. 5900).</li>
+          <li class="lang-zh"><b>私人教练</b>：空中飞人 0.5h 200 元 / 1.5h 500 元 / 2.5h 850 元；游泳 0.5h 150 元；高尔夫 1h 400 元。</li>
+          <li class="lang-en"><b>Private coaching</b>: trapeze CNY 200 / 30 min, 500 / 90 min, 850 / 150 min; swimming CNY 150 / 30 min; golf CNY 400 / hour.</li>
+          <li class="lang-zh"><b>村外游</b>：漓江竹筏/游船、龙脊梯田、溶洞探险、大脚车丛林越野、夜观萤火虫、溶洞音疗、森林浴等。</li>
+          <li class="lang-en"><b>Off-site excursions</b>: Li River raft/cruise, Longji rice terraces, cave exploration, off-road buggy tours, firefly nights, cave sound healing, forest bathing.</li>
+          <li class="lang-zh"><b>其他</b>：精品店、照相柜台、洗衣服务、高级酒水（香槟、品牌红酒）、额外点餐。</li>
+          <li class="lang-en"><b>Others</b>: boutique, photo counter, laundry, premium drinks (champagne, branded wine), extra à la carte orders.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="lang-zh">成人项目注意事项</span><span class="lang-en">Good to Know</span></h3>
+        <ul class="tight">
+          <li class="lang-zh"><b>酒后禁止参加任何运动项目。</b></li>
+          <li class="lang-en"><b>No sports after drinking alcohol.</b></li>
+          <li class="lang-zh"><b>运动必须穿运动服 + 运动鞋</b>，否则无法参加；攀岩需长裤，空中飞人禁裙装/纽扣/拉链/皮带。</li>
+          <li class="lang-en"><b>Sportswear and trainers are mandatory</b>; long trousers for climbing; no skirts, buttons, zips or belts on the trapeze.</li>
+          <li class="lang-zh"><b>未满 18 岁参加运动项目需家长陪同并签字。</b>健身设施限 18 岁以上。</li>
+          <li class="lang-en"><b>Under-18s need a parent present and a signature.</b> Gym equipment is 18+.</li>
+          <li class="lang-zh"><b>村内自行车为员工专用，游客请勿擅自骑行</b>；参加骑行统一在单车角集合。</li>
+          <li class="lang-en"><b>Staff bicycles are not for guest use</b>; join biking sessions at the Bike Corner.</li>
+          <li class="lang-zh"><b>雨天调整：</b>空中飞人移至剧场，部分室外项目暂停或改室内；室内场馆充足，雨天不受影响。</li>
+          <li class="lang-en"><b>When it rains:</b> the trapeze moves to the theatre; some outdoor sessions pause or move indoors. Indoor facilities are ample.</li>
+          <li class="lang-zh"><b>园区电瓶车 07:00–22:30 招手即停</b>，不用为走路发愁。</li>
+          <li class="lang-en"><b>Shuttle buggies run 07:00–22:30, hail one anywhere</b> — no need to walk everywhere.</li>
+          <li class="lang-zh"><b>集手环小玩法：</b>每完成一个项目可获对应颜色手环，集齐「彩虹手环」可找村长换专属纪念手环。</li>
+          <li class="lang-en"><b>Wristband quest:</b> each activity you complete earns a coloured wristband; collect the "rainbow" set and swap it with the Village Chief for a special souvenir band.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. GOLDEN MOMENTS ============ -->
+<section id="golden">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">5</div>
+      <div>
+        <h2 class="lang-zh">长青乐 / 金色时光俱乐部（长者专属一价全包项目）</h2>
+        <h2 class="lang-en">The Golden Moments Club (Seniors' All-Inclusive Programme)</h2>
+        <p class="lang-zh">桂林度假村是全球唯一推广「老年关爱长青乐」项目的地中海俱乐部 · 官方英文名 The Golden Moments Club</p>
+        <p class="lang-en">Guilin is the only Club Med resort worldwide running a dedicated senior-care programme · Official name: The Golden Moments Club</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">俱乐部概况</span><span class="lang-en">Overview</span></h3>
+      <div class="row"><div class="k lang-zh">面向人群</div><div class="k lang-en">Who it's for</div><div class="v lang-zh">官方定位：面向「三代同堂家庭」与活力长者，<b>优先面向 60 岁以上宾客</b>；活动对所有成人开放，长者优先。部分渠道宣传为 50 岁以上——<b>不同来源口径不一，建议现场确认</b>。</div><div class="v lang-en">Officially aimed at "3G families" and active seniors, with <b>priority to guests over 60</b>; open to all adults with seniors first. Some marketing says 50+ — <b>sources differ, so confirm on site</b>.</div></div>
+      <div class="row"><div class="k lang-zh">覆盖范围</div><div class="k lang-en">Availability</div><div class="v lang-zh">中国区所有 Club Med 度假村（滑雪村冬季除外）；<b>桂林是唯一推广「长青乐」老年关爱项目的度假村</b>。</div><div class="v lang-en">All Club Med resorts in China (except ski resorts in winter); <b>Guilin is the flagship for the senior-care programme</b>.</div></div>
+      <div class="row"><div class="k lang-zh">设计思路</div><div class="k lang-en">Design</div><div class="v lang-zh">与儿童俱乐部类似，<b>由长者按兴趣与体力自主选择</b>，节奏舒缓、不赶行程；白天各得其乐，傍晚阖家相聚用餐。</div><div class="v lang-en">Like the Kids Club, seniors <b>choose by interest and energy level</b>; gentle pace, nothing rushed. Everyone does their own thing by day and gathers for dinner.</div></div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">三项官方主推体验</span><span class="lang-en">Three Signature Experiences</span><span class="tag red"><span class="lang-zh">均需至少提前 1 天预约</span><span class="lang-en">All require 1-day advance booking</span></span></h3>
+      <div class="row"><div class="k lang-zh">艺术魅力</div><div class="k lang-en">Art</div><div class="v lang-zh">跟随 G.O 漫步愚自乐园，聆听 200 多件国际艺术家雕塑背后的故事，随后进入艺术宫殿深度感受艺术氛围。</div><div class="v lang-en">Stroll Yuzi Paradise with a G.O., hear the stories behind 200+ sculptures by international artists, then step into the art palace.</div></div>
+      <div class="row"><div class="k lang-zh">健康养生</div><div class="k lang-en">Wellness</div><div class="v lang-zh">在桂林清新的晨间空气中，于风景如画的户外场地练习传统<b>八段锦</b>，动作舒缓、呼吸深长。</div><div class="v lang-en">Traditional <b>Baduanjin (Eight Brocades)</b> qigong outdoors in Guilin's fresh morning air — gentle movements, deep breathing.</div></div>
+      <div class="row"><div class="k lang-zh">非遗文化体验</div><div class="k lang-en">Heritage</div><div class="v lang-zh">品尝地道<b>非遗美食油茶</b>；亲手用非遗技艺<b>拓印「百寿图」</b>，把这份有意义的手作纪念带回家。</div><div class="v lang-en">Taste authentic <b>oil tea</b> (intangible cultural heritage cuisine) and make a <b>"Hundred Longevity" rubbing</b> to take home.</div></div>
+      <div class="note red">
+        <span class="ttl lang-zh">预约方式</span><span class="ttl lang-en">How to book</span>
+        <span class="lang-zh">官方对上述三项均标注 <b>Please book at least one day in advance</b>（至少提前 1 天预约）。预约渠道：<b>前台 / 村长或 G.O / 「我的 Club Med」小程序</b>。</span>
+        <span class="lang-en">The resort lists <b>"Please book at least one day in advance"</b> for all three. Book via <b>Reception, a G.O. / the Village Chief, or the "My Club Med" mini-program</b>.</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">每周活动排期（参考）</span><span class="lang-en">Weekly Programme (Reference)</span></h3>
+      <p class="sub lang-zh">长青乐俱乐部的活动为<b>整周轮转</b>，时长多在 30–60 分钟，节奏舒缓，可自由挑选参加。</p>
+      <p class="sub lang-en">The club runs on a <b>full-week rotation</b>; sessions are usually 30–60 minutes, gentle, and you pick whatever appeals.</p>
+      <div class="tw">
+        <table>
+          <thead><tr>
+            <th class="lang-zh">星期</th><th class="lang-en">Day</th>
+            <th class="lang-zh">活动安排</th><th class="lang-en">Programme</th>
+          </tr></thead>
+          <tbody>
+            <tr><td class="lang-zh"><b>周一</b></td><td class="lang-en"><b>Monday</b></td><td class="lang-zh">09:15 晨间健走 ｜ 10:30 文化艺术游览 ｜ 15:00 茶道 ｜ 16:00 KTV ｜ 17:00 瑜伽</td><td class="lang-en">09:15 Morning walk | 10:30 Cultural &amp; art tour | 15:00 Tea ceremony | 16:00 KTV | 17:00 Yoga</td></tr>
+            <tr><td class="lang-zh"><b>周二</b></td><td class="lang-en"><b>Tuesday</b></td><td class="lang-zh">09:30 瑜伽 ｜ 10:30 中式按摩课程 ｜ 15:30 厨艺课 ｜ 16:30 麻将 ｜ 17:00 水中健身</td><td class="lang-en">09:30 Yoga | 10:30 Chinese massage class | 15:30 Cooking class | 16:30 Mahjong | 17:00 Aqua fitness</td></tr>
+            <tr><td class="lang-zh"><b>周三</b></td><td class="lang-en"><b>Wednesday</b></td><td class="lang-zh">09:00 太极 ｜ 10:15 电影 ｜ 11:00 喂鸭子 ｜ 15:00 油茶制作<span class="pill gold">另付费</span> ｜ 15:30 茶道 ｜ 16:30 广场舞</td><td class="lang-en">09:00 Tai chi | 10:15 Movie | 11:00 Duck feeding | 15:00 Oil-tea making <span class="pill gold">extra</span> | 15:30 Tea ceremony | 16:30 Square dancing</td></tr>
+            <tr><td class="lang-zh"><b>周四</b></td><td class="lang-en"><b>Thursday</b></td><td class="lang-zh">09:15 晨间健走 ｜ 10:30 中式按摩课程 ｜ 11:00 太极 ｜ 16:30 KTV ｜ 17:00 瑜伽</td><td class="lang-en">09:15 Morning walk | 10:30 Chinese massage class | 11:00 Tai chi | 16:30 KTV | 17:00 Yoga</td></tr>
+            <tr><td class="lang-zh"><b>周五</b></td><td class="lang-en"><b>Friday</b></td><td class="lang-zh">09:30 瑜伽 ｜ 10:30 文化艺术游览 ｜ 15:00 油茶制作<span class="pill gold">另付费</span> ｜ 15:30 茶道 ｜ 17:00 麻将</td><td class="lang-en">09:30 Yoga | 10:30 Cultural &amp; art tour | 15:00 Oil-tea making <span class="pill gold">extra</span> | 15:30 Tea ceremony | 17:00 Mahjong</td></tr>
+            <tr><td class="lang-zh"><b>周六</b></td><td class="lang-en"><b>Saturday</b></td><td class="lang-zh">09:30 电影 ｜ 10:30 油茶制作 或 中式按摩课程 ｜ 11:00 喂鸭子 ｜ 15:30 厨艺课 ｜ 16:30 广场舞 ｜ 17:00 水中健身</td><td class="lang-en">09:30 Movie | 10:30 Oil-tea making or massage class | 11:00 Duck feeding | 15:30 Cooking class | 16:30 Square dancing | 17:00 Aqua fitness</td></tr>
+            <tr><td class="lang-zh"><b>周日</b></td><td class="lang-en"><b>Sunday</b></td><td class="lang-zh">09:15 晨间健走 ｜ 10:15 电影 ｜ 10:30 文化艺术游览 ｜ 16:00 太极 ｜ 17:00 KTV</td><td class="lang-en">09:15 Morning walk | 10:15 Movie | 10:30 Cultural &amp; art tour | 16:00 Tai chi | 17:00 KTV</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="note">
+        <span class="ttl lang-zh">你行程内的天数对照</span><span class="ttl lang-en">Your dates mapped to the week</span>
+        <span class="lang-zh">9/27 <b>周日</b>（15:00 入住，当天可赶晚间活动）· 9/28 <b>周一</b> · 9/29 <b>周二</b> · 9/30 <b>周三</b> · 10/1 <b>周四</b>（退房日）。<b>完整可用的是周一、周二、周三三天</b>。</span>
+        <span class="lang-en">9/27 <b>Sunday</b> (15:00 check-in, evening activities possible) · 9/28 <b>Monday</b> · 9/29 <b>Tuesday</b> · 9/30 <b>Wednesday</b> · 10/1 <b>Thursday</b> (departure). <b>Mon–Wed are your three full days.</b></span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">长青乐注意事项</span><span class="lang-en">Good to Know</span></h3>
+      <ul class="tight">
+        <li class="lang-zh"><b>预约：</b>官方主推的三项体验须<b>至少提前 1 天</b>预约。另有渠道资料称「长青乐俱乐部每月双数日期开放、需提前半天预约、限 15 人」——<b>此说法与官方口径不一致，请以度假村现场公告为准</b>。你的行程中双数日期为 9/28、9/30。</li>
+        <li class="lang-en"><b>Booking:</b> the three signature experiences need <b>at least one day's notice</b>. One source also states the club opens on even-numbered days, needs half a day's notice and caps at 15 people — <b>this conflicts with the official line, so follow the resort's own notice</b>. Even-numbered dates in your stay: Sep 28 and Sep 30.</li>
+        <li class="lang-zh"><b>费用：</b>绝大部分活动含在一价全包内；<b>油茶制作</b>等项目部分渠道标注需额外付费。参加前建议问一句是否收费。</li>
+        <li class="lang-en"><b>Cost:</b> almost everything is included; <b>oil-tea making</b> is flagged as chargeable by some sources. Worth asking before you join.</li>
+        <li class="lang-zh"><b>着装：</b>晨间健走、太极、八段锦、水中健身等需<b>运动鞋 + 舒适运动服</b>；水中健身需泳衣。茶道、电影、麻将、KTV 为休闲装。</li>
+        <li class="lang-en"><b>Dress:</b> morning walks, tai chi, Baduanjin and aqua fitness need <b>sports shoes and comfortable sportswear</b>; swimwear for aqua fitness. Tea ceremony, movies, mahjong and KTV are casual.</li>
+        <li class="lang-zh"><b>节奏提示：</b>桂林 9–10 月日间仍偏热潮湿，建议把户外活动安排在上午 9–11 点与傍晚，正午 12–15 点安排室内（茶道、电影、麻将、按摩课）。</li>
+        <li class="lang-en"><b>Pacing tip:</b> Guilin stays hot and humid in late Sep, so schedule outdoor sessions for 9–11 am and late afternoon, keeping midday 12–3 pm indoors (tea, movies, mahjong, massage class).</li>
+        <li class="lang-zh"><b>交通：</b>园区较大，长者出行可依赖<b>电瓶车（07:00–22:30，招手即停）</b>；艺术公园游览也可乘电瓶车（部分资料称需提前一天在前台预约巴吉车）。</li>
+        <li class="lang-en"><b>Getting around:</b> the resort is large — use the <b>shuttle buggies (07:00–22:30, hail anywhere)</b>; a buggy can also be arranged for the sculpture park tour (some sources say book at Reception one day ahead).</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. TODDLER ============ -->
+<section id="toddler">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">6</div>
+      <div>
+        <h2 class="lang-zh">带 3 岁半宝宝能玩的一价全包项目</h2>
+        <h2 class="lang-en">All-Inclusive Activities You Can Share with a 3½-Year-Old</h2>
+        <p class="lang-zh">不依赖小小俱乐部 · 由成人/长者全程陪同 · 全部含在房费内</p>
+        <p class="lang-en">Not relying on the Petit Club · Always accompanied by an adult · All included in your package</p>
+      </div>
+    </div>
+
+    <div class="note red">
+      <span class="ttl lang-zh">先明确三条硬规则（避免现场白跑）</span>
+      <span class="ttl lang-en">Three hard rules to know first</span>
+      <span class="lang-zh">
+        ① <b>3 岁半不能进迷你俱乐部</b>。迷你俱乐部为 <b>4–10 周岁</b>；3 岁半想托管只能付费走「小小俱乐部 Petit Club」（2–3 岁，约 235 元/半天、470 元/全天，报名 08:30–09:00 @迷你俱乐部，需带儿童健康手册）。<br>
+        ② <b>有年龄门槛的项目，3 岁半一律不能参加</b>：空中飞人/蹦床 <b>4 岁+</b>、射箭 <b>6 岁+</b>、高尔夫 <b>8 岁+</b>、攀岩/山地单车/太极/瑜伽 <b>11 岁+</b>。这些项目现场会核年龄，不要抱侥幸。<br>
+        ③ <b>3 岁半能玩的是「家庭向」项目 + 家长陪同的自由活动</b>，见下表。所有涉水项目须家长<b>全程贴身看护</b>。
+      </span>
+      <span class="lang-en">
+        ① <b>A 3½-year-old cannot join the Mini Club</b> (ages 4–10). For childcare you would need the paid <b>Petit Club (ages 2–3)</b> — about CNY 235 half-day / 470 full day, sign-up 08:30–09:00 at the Mini Club, child health booklet required.<br>
+        ② <b>Anything with an age limit is off the table</b>: trapeze/trampoline <b>4+</b>, archery <b>6+</b>, golf <b>8+</b>, climbing / mountain biking / tai chi / yoga <b>11+</b>. Ages are checked on site.<br>
+        ③ <b>What does work is "family" programming plus free play with a parent</b>, as listed below. Any water activity requires <b>constant hands-on supervision</b>.
+      </span>
+    </div>
+
+    <div class="card">
+      <h3><span class="lang-zh">适合成人 / 长者带 3 岁半孩子参加的项目</span><span class="lang-en">Activities for an Adult + 3½-Year-Old</span></h3>
+      <div class="tw">
+        <table>
+          <thead><tr>
+            <th class="lang-zh">项目</th><th class="lang-en">Activity</th>
+            <th class="lang-zh">时间</th><th class="lang-en">Time</th>
+            <th class="lang-zh">地点</th><th class="lang-en">Venue</th>
+            <th class="lang-zh">着装 / 自带</th><th class="lang-en">Dress / Bring</th>
+            <th class="lang-zh">预约与注意</th><th class="lang-en">Booking &amp; Notes</th>
+          </tr></thead>
+          <tbody>
+            <tr>
+              <td class="lang-zh"><b>Amazing Family! 亲子活动</b><span class="pill gold">首推</span></td>
+              <td class="lang-en"><b>Amazing Family!</b><span class="pill gold">Top pick</span></td>
+              <td class="lang-zh">每日多场，参考 <b>10:00 / 13:30 / 16:00 / 21:00</b></td>
+              <td class="lang-en">Several daily, approx. <b>10:00 / 13:30 / 16:00 / 21:00</b></td>
+              <td class="lang-zh">主餐厅 Atelier、户外、泳池、烹饪学校等</td>
+              <td class="lang-en">The Atelier, outdoors, pool, cookery school</td>
+              <td class="lang-zh">运动鞋 + 舒适衣物；戏水场次加带泳衣与<b>游泳尿布</b></td>
+              <td class="lang-en">Sports shoes, comfortable clothes; swimwear + <b>swim nappies</b> for water sessions</td>
+              <td class="lang-zh"><b>无需预约</b>，按当日活动板/小程序参加。含一起游戏（愤怒的小鸟、巨型积木、迷你运动会）、一起寻找（寻宝解谜）、一起关爱（自然环保手工）、一起戏水（水中亲子游戏）——<b>2–3 岁官方也列入可参加范围</b></td>
+              <td class="lang-en"><b>No booking</b>, join per the daily board / mini-program. Includes play (angry birds, giant blocks, mini sports day), seek (treasure hunts), care (nature crafts) and splash (water games) — <b>officially listed as open to ages 2–3</b></td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>家庭下午茶 Big Snack</b></td><td class="lang-en"><b>Family "Big Snack"</b></td>
+              <td class="lang-zh">下午，多与 15:30–16:30 时段重叠</td><td class="lang-en">Afternoon, usually overlapping 15:30–16:30</td>
+              <td class="lang-zh">主餐厅 / 吧台</td><td class="lang-en">Main restaurant / bar</td>
+              <td class="lang-zh">休闲；带围兜与湿巾</td><td class="lang-en">Casual; bring a bib and wipes</td>
+              <td class="lang-zh"><b>无需预约</b>；家庭专场点心时段，孩子可自由取食</td><td class="lang-en"><b>No booking</b>; a family-focused snack time children can help themselves at</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>家庭晚间秀 Family Show Time</b></td><td class="lang-en"><b>Family Show Time</b></td>
+              <td class="lang-zh">每晚 <b>20:15</b> 起</td><td class="lang-en">Nightly from <b>20:15</b></td>
+              <td class="lang-zh">剧场 / 泳池甲板</td><td class="lang-en">Theatre / pool deck</td>
+              <td class="lang-zh">休闲；可配合当晚 Dress Code 主题</td><td class="lang-en">Casual; follow the night's dress code if you like</td>
+              <td class="lang-zh">无需预约。<b>官方将 2–3 岁列入 Family show time 可参加范围</b>；歌舞杂技 + 糖果秀，注意音量与散场人流</td><td class="lang-en">No booking. <b>Officially open to ages 2–3</b>; singing, acrobatics and candy shows — mind the volume and the crowd at the end</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>足球高尔夫 Footgolf</b></td><td class="lang-en"><b>Footgolf</b></td>
+              <td class="lang-zh"><b>09:00 – 12:00 / 14:00 – 17:00</b></td><td class="lang-en"><b>09:00 – 12:00 / 14:00 – 17:00</b></td>
+              <td class="lang-zh">驿站借球，草地场地</td><td class="lang-en">Borrow a ball at the Lounge, play on the lawn</td>
+              <td class="lang-zh">运动鞋；宽檐帽</td><td class="lang-en">Sports shoes; wide-brim hat</td>
+              <td class="lang-zh"><b>无需预约</b>。全年龄段项目，<b>官方 2–3 岁栏目明确含 Footgolf 团体课与免费入场</b>；孩子踢短距离完全可玩</td><td class="lang-en"><b>No booking.</b> An all-ages activity — <b>the official 2–3 listing includes Footgolf group lessons and free access</b>; short kicks are perfectly playable</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>鸭鸭喂食</b><span class="pill gold">孩子最爱</span></td><td class="lang-en"><b>Duck Feeding</b><span class="pill gold">Kids' favourite</span></td>
+              <td class="lang-zh">上午约 <b>11:00</b>（每周数次，见当日公告）</td><td class="lang-en">Around <b>11:00</b>, several days a week (see daily notice)</td>
+              <td class="lang-zh">沙滩旁 / 小桥边</td><td class="lang-en">Beside the beach / by the little bridge</td>
+              <td class="lang-zh">休闲；备一套换洗衣物</td><td class="lang-en">Casual; bring a change of clothes</td>
+              <td class="lang-zh"><b>无需预约</b>。免费活动，孩子一人一瓶饲料，鸭子温顺亲近人。若该场次属迷你俱乐部行程，家长可带 3 岁半孩子在水边同样参与</td><td class="lang-en"><b>No booking.</b> A free activity, one bottle of feed per child, ducks are tame and friendly. If the session sits in the Mini Club schedule, parents can join from the water's edge with a toddler</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>儿童戏水池</b></td><td class="lang-en"><b>Kids' Shallow Pool</b></td>
+              <td class="lang-zh">随室内泳池开放（09:00–12:00 / 13:00–17:00），视儿童俱乐部安排</td><td class="lang-en">With the indoor pool (09:00–12:00 / 13:00–17:00), subject to Kids Club scheduling</td>
+              <td class="lang-zh">室内泳池儿童区（水深约 0.3 m）</td><td class="lang-en">Indoor pool children's section (approx. 0.3 m deep)</td>
+              <td class="lang-zh">泳衣 + <b>游泳尿布</b>；可借臂圈、浴巾</td><td class="lang-en">Swimwear + <b>swim nappies</b>; armbands and towels available</td>
+              <td class="lang-zh">无需预约。<b>家长必须全程贴身看护</b>，救生员仅在开放时段值班</td><td class="lang-en">No booking. <b>Parents must stay within arm's reach</b>; lifeguards are on duty only during opening hours</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>室外主泳池（浅水区）</b></td><td class="lang-en"><b>Outdoor Main Pool (shallow end)</b></td>
+              <td class="lang-zh"><b>09:00 – 12:00 / 15:00 – 19:00</b>（夏季开放，10 月视天气）</td><td class="lang-en"><b>09:00 – 12:00 / 15:00 – 19:00</b> (summer; October weather-dependent)</td>
+              <td class="lang-zh">园区中央天然泳池，水深 0.75–1.2 m</td><td class="lang-en">Central natural pool, 0.75–1.2 m deep</td>
+              <td class="lang-zh">泳衣 + 游泳尿布；防晒帽</td><td class="lang-en">Swimwear + swim nappies; sun hat</td>
+              <td class="lang-zh">无需预约。浅水区刚没过脚踝，适合幼儿；<b>下水请家长全程抱扶</b>。泳池吧 13:00–18:00 供应饮品</td><td class="lang-en">No booking. The shallow end barely covers a toddler's ankles; <b>hold your child at all times</b>. Poolside bar serves drinks 13:00–18:00</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>儿童游乐区 / 儿童攀玩区</b></td><td class="lang-en"><b>Kids' Play &amp; Climbing Area</b></td>
+              <td class="lang-zh">日间开放（视儿童俱乐部安排）</td><td class="lang-en">Daytime, subject to Kids Club scheduling</td>
+              <td class="lang-zh">迷你俱乐部旁 / 活动中心</td><td class="lang-en">Beside the Mini Club / Activity Centre</td>
+              <td class="lang-zh"><b>需穿袜子</b>（地垫区）；轻便衣物</td><td class="lang-en"><b>Socks required</b> (padded floor); light clothing</td>
+              <td class="lang-zh">无需预约。<b>官方口径：2 岁以上可玩儿童攀玩区</b>；家长陪同，注意幼童与大童混玩时的碰撞</td><td class="lang-en">No booking. <b>Officially open from age 2</b>; parents accompany and watch out for collisions with bigger children</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>小儿推车游园 + 雕塑公园漫步</b></td><td class="lang-en"><b>Buggy Ride &amp; Sculpture Park Stroll</b></td>
+              <td class="lang-zh">电瓶车 <b>07:00 – 22:30</b>；公园全天</td><td class="lang-en">Buggies <b>07:00 – 22:30</b>; park all day</td>
+              <td class="lang-zh">全村 46 公顷园区，200+ 件雕塑</td><td class="lang-en">46-hectare resort, 200+ sculptures</td>
+              <td class="lang-zh">舒适鞋 + 驱蚊液 + 推车</td><td class="lang-en">Comfortable shoes, repellent, stroller</td>
+              <td class="lang-zh">无需预约，<b>招手即停</b>。推车在石径与草地可用；避开正午暴晒时段</td><td class="lang-en">No booking, <b>hail one anywhere</b>. The stroller copes with paths and lawns; avoid the midday sun</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>沙滩挖沙</b></td><td class="lang-en"><b>Beach / Sand Play</b></td>
+              <td class="lang-zh">日间</td><td class="lang-en">Daytime</td>
+              <td class="lang-zh">园区白沙滩</td><td class="lang-en">The resort's white-sand beach</td>
+              <td class="lang-zh">速干衣物，自带小桶铲子</td><td class="lang-en">Quick-dry clothes; bring a bucket and spade</td>
+              <td class="lang-zh">无需预约，无需预约也无人看管，<b>家长负责看护</b>；喂鸭子活动也在此区域</td><td class="lang-en">No booking and no supervision provided — <b>parents are responsible</b>. Duck feeding also happens here</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>泳池派对 / 家庭水枪游戏</b></td><td class="lang-en"><b>Pool Party / Family Water Games</b></td>
+              <td class="lang-zh">泳池开放时段，不定期举办</td><td class="lang-en">During pool hours, run intermittently</td>
+              <td class="lang-zh">室外主泳池 / 泳池甲板</td><td class="lang-en">Outdoor main pool / pool deck</td>
+              <td class="lang-zh">泳衣；备浴巾</td><td class="lang-en">Swimwear; bring a towel</td>
+              <td class="lang-zh">无需预约。现场人多，<b>抱紧孩子、远离深水区与喷水口</b></td><td class="lang-en">No booking. It gets busy — <b>hold your child, keep away from the deep end and jets</b></td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>餐饮与下午茶</b></td><td class="lang-en"><b>Meals &amp; Afternoon Tea</b></td>
+              <td class="lang-zh">早餐 07:00–10:00｜午餐 12:00–14:00｜晚餐 18:30–21:00｜下午茶 15:30 起｜面吧 14:00 起</td>
+              <td class="lang-en">Breakfast 07:00–10:00 | Lunch 12:00–14:00 | Dinner 18:30–21:00 | Tea from 15:30 | Noodle Bar from 14:00</td>
+              <td class="lang-zh">主餐厅 / 面吧</td><td class="lang-en">The Atelier / Noodle Bar</td>
+              <td class="lang-zh">休闲；带围兜、儿童餐具（餐厅亦提供）</td><td class="lang-en">Casual; bib and kids' cutlery (also provided)</td>
+              <td class="lang-zh">无需预约。设<b>婴儿食物区与儿童餐具</b>；3 岁半以下通常免房费（以预订确认为准）</td><td class="lang-en">No booking. <b>Baby-food corner and kids' cutlery</b> available; children under 4 are usually free (check your booking)</td>
+            </tr>
+            <tr>
+              <td class="lang-zh"><b>溶洞 / 村外自然体验</b></td><td class="lang-en"><b>Cave / Off-site Nature Trips</b></td>
+              <td class="lang-zh">按村外游排期（付费）</td><td class="lang-en">Per excursion schedule (chargeable)</td>
+              <td class="lang-zh">村外，需乘车</td><td class="lang-en">Off site, by vehicle</td>
+              <td class="lang-zh">运动鞋 + 薄外套（洞内凉）</td><td class="lang-en">Sports shoes + light jacket (caves are cool)</td>
+              <td class="lang-zh"><b>需提前预约</b>（一般提前 1 天，村外游柜台分机 5833）。3 岁半对光线与颠簸较敏感，<b>建议只选"溶洞音疗/森林浴"这类低强度项目</b>，丛林越野与荒野探秘偏刺激，慎选</td>
+              <td class="lang-en"><b>Book ahead</b> (usually one day; excursion desk ext. 5833). Toddlers are sensitive to darkness and rough rides — <b>prefer low-intensity options such as cave sound healing or forest bathing</b>; jungle off-road trips are jarring for a 3½-year-old</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <h3><span class="lang-zh">带 3 岁半孩子的实操建议</span><span class="lang-en">Practical Tips</span></h3>
+        <ul class="tight">
+          <li class="lang-zh"><b>一天安排两块就够：</b>上午 09:00–11:00 户外（喂鸭子 / footgolf / 漫步），午睡后 15:00–17:00 戏水或 Amazing Family，晚上 20:15 家庭秀。3 岁半的耐力不允许排满。</li>
+          <li class="lang-en"><b>Two blocks a day is plenty:</b> 09:00–11:00 outdoors (ducks, footgolf, strolls), 15:00–17:00 after the nap for water play or Amazing Family, then the 20:15 family show. A 3½-year-old cannot manage a full schedule.</li>
+          <li class="lang-zh"><b>正午 12:00–15:00 一定躲进室内</b>（午餐 + 午睡），桂林 9–10 月紫外线与湿度对幼儿负担较重。</li>
+          <li class="lang-en"><b>Hide indoors 12:00–15:00</b> (lunch plus nap); Guilin's late-September UV and humidity are hard on toddlers.</li>
+          <li class="lang-zh"><b>必备清单：</b>轻便推车、游泳尿布、臂圈、速干衣 3 套、宽檐帽、驱蚊液、常备药、保温杯、小零食。</li>
+          <li class="lang-en"><b>Pack list:</b> light stroller, swim nappies, armbands, three sets of quick-dry clothes, wide-brim hat, repellent, basic medicines, a flask and snacks.</li>
+          <li class="lang-zh"><b>安全边界：</b>水边、雕塑石径、电瓶车上下车、泳池派对人群是四个高风险场景，视线不离人。</li>
+          <li class="lang-en"><b>Safety watch-outs:</b> water's edge, sculpture-park stone paths, getting on and off buggies, and crowded pool parties — keep them in sight at all times.</li>
+          <li class="lang-zh"><b>想要大人独处时间：</b>只能走付费小小俱乐部（2–3 岁），需带<b>儿童健康手册</b>；建议先试半天（235 元），观察孩子适应再做全天。</li>
+          <li class="lang-en"><b>Want adult-only time:</b> the only route is the paid Petit Club (2–3), and you must bring the <b>child health booklet</b>. Try a half day first (CNY 235) before committing to a full day.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="lang-zh">如果你更想让长辈看孩子</span><span class="lang-en">If Grandparents Are Taking the Toddler</span></h3>
+        <ul class="tight">
+          <li class="lang-zh"><b>推荐组合：</b>上午陪长辈一起参加长青乐的「晨间健走 / 文化艺术游览」——推车在园区可行，孩子也能看到雕塑与湖水；长者活动节奏慢，很适合带娃同行。</li>
+          <li class="lang-en"><b>Good pairing:</b> join the Golden Moments morning walk or art tour with grandparents — the park is stroller-friendly, toddlers enjoy the sculptures and lake, and senior sessions are slow enough for a little one.</li>
+          <li class="lang-zh"><b>午后：</b>长者可在主吧台参与茶道 / 电影 / 麻将（室内有空调），孩子由另一位家长带去戏水，分工明确。</li>
+          <li class="lang-en"><b>Afternoon:</b> grandparents take tea ceremony, movie or mahjong at the main bar (air-conditioned) while the other parent takes the toddler to the water — a clean division of labour.</li>
+          <li class="lang-zh"><b>注意：</b>长青乐的「油茶制作」等部分项目涉及热水、工具，不建议幼儿在场；建议选茶道、电影、文化艺术游览、喂鸭子这类低风险项目。</li>
+          <li class="lang-en"><b>Note:</b> some Golden Moments sessions (oil-tea making) involve hot water and tools, so not ideal with a toddler. Prefer tea ceremony, movies, art tours and duck feeding.</li>
+          <li class="lang-zh"><b>集合与交通：</b>长者活动多在驿站、瑜伽室、主吧台等室内点集合，园区电瓶车 07:00–22:30 招手即停，带着推车出行不必担心距离。</li>
+          <li class="lang-en"><b>Meet points:</b> senior sessions mostly gather indoors at the Lounge, yoga room or main bar; buggies run 07:00–22:30, so distance is never an issue with a stroller.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="disc">
+      <h4 class="lang-zh">可靠性说明（重要）</h4>
+      <h4 class="lang-en">Reliability Statement (Important)</h4>
+      <p class="lang-zh">本页内容整理自 Club Med 官方资料（官网、官方活动表 PDF、官方合作渠道）、度假村公开活动表与多位住客的公开游记。以下事项在公开资料中<b>存在不一致</b>，已如实标注，请以度假村现场公告为准：<b>①</b> 蒙古餐厅/莲餐厅的登记开始时间（07:00 与 08:30 两种说法）；<b>②</b> 莲餐厅是否需提前一天预约；<b>③</b> 长青乐俱乐部的年龄门槛（60+ 优先 vs 50+）、开放日期规则与人数上限（15 人）——后者另有"每月双数日期开放、提前半天预约"的说法，与官方"提前一天预约"口径不同；<b>④</b> 迷你俱乐部签到时间为 08:30–09:00 还是 08:45–09:15；<b>⑤</b> 各泳池与面吧的具体起止时间在不同资料中略有差异。</p>
+      <p class="lang-en">This page is compiled from Club Med official materials (website, official programme PDFs, official partner channels), the resort's published activity sheets and multiple guests' public trip reports. Where public sources <b>disagree</b>, that is flagged rather than smoothed over — always confirm with the resort on site: <b>①</b> Mongolian/Lotus sign-up start time (07:00 vs 08:30); <b>②</b> whether the Lotus needs one day's notice; <b>③</b> Golden Moments age threshold (60+ priority vs 50+), opening-day rules and the 15-person cap — a separate claim of "even-numbered dates, half a day's notice" conflicts with the official "one day in advance"; <b>④</b> Mini Club sign-in at 08:30–09:00 or 08:45–09:15; <b>⑤</b> minor variations in pool and Noodle Bar hours between sources.</p>
+    </div>
+
+    <div class="disc">
+      <h4 class="lang-zh">下飞机后第一件该做的事</h4>
+      <h4 class="lang-en">Do This First</h4>
+      <p class="lang-zh">到村后先到<b>前台</b>领取手环并索取一份<b>「每日活动表」</b>（或在微信关注「Club Med 桂林度假村」公众号 / 打开「我的 Club Med」小程序）。本页的周排期是模板，度假村每天会按天气调整。<b>建议在入住当天一次问清 3 件事：</b>① 本周哪几天开蒙古餐厅、哪几天开莲餐厅、几点开始登记；② 孩子要去的迷你俱乐部本周每日安排；③ 长青乐本周的开放日期与预约方式。</p>
+      <p class="lang-en">On arrival, collect your wristband at <b>Reception</b> and ask for the <b>Daily Programme</b> sheet (or follow the "Club Med Guilin" WeChat account / open the "My Club Med" mini-program). The weekly grid here is a template — the resort adjusts daily for weather. <b>Ask these three things at check-in:</b> ① which nights the Mongolian and Lotus restaurants open this week and what time sign-up starts; ② your child's Mini Club programme for the week; ③ this week's Golden Moments dates and how to book.</p>
+    </div>
+
+    <p class="src lang-zh">天气数据：Open-Meteo（开放免费气象接口，每次打开自动刷新，按度假村坐标 25.06°N / 110.27°E 取数）。页面为单文件，无外部依赖，可离线保存、转发到任意手机浏览器打开；仅天气模块需要联网。</p>
+    <p class="src lang-en">Weather data: Open-Meteo (open free weather API, refreshed on every page load, at the resort's coordinates 25.06°N / 110.27°E). This is a single self-contained file with no external dependencies — save it or forward it to any phone browser; only the weather module needs an internet connection.</p>
+  </div>
+</footer>
+
+<script>
+/* ---------------- state ---------------- */
+var WX = { data:null };
+
+/* ---------------- language ---------------- */
+function setLang(l, skipRender){
+  document.documentElement.setAttribute('data-lang', l);
+  document.documentElement.setAttribute('lang', l === 'zh' ? 'zh-CN' : 'en');
+  document.getElementById('btn-zh').classList.toggle('on', l === 'zh');
+  document.getElementById('btn-en').classList.toggle('on', l === 'en');
+  try{ localStorage.setItem('cmguide_lang', l); }catch(e){}
+  if(!skipRender && WX.data){ renderWeather(); }
+}
+(function initLang(){
+  var saved = null;
+  try{ saved = localStorage.getItem('cmguide_lang'); }catch(e){}
+  setLang(saved === 'en' ? 'en' : 'zh', true);
+})();
+
+/* ---------------- weather ---------------- */
+var WX_URL = 'https://api.open-meteo.com/v1/forecast'
+  + '?latitude=25.0833&longitude=110.3167'
+  + '&current=temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,weather_code,wind_speed_10m,uv_index'
+  + '&hourly=temperature_2m,weather_code,precipitation_probability'
+  + '&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,uv_index_max'
+  + '&timezone=Asia%2FShanghai&forecast_days=8';
+
+var WMO = {
+  0:['晴','Clear sky'],1:['晴间多云','Mainly clear'],2:['多云','Partly cloudy'],3:['阴','Overcast'],
+  45:['有雾','Fog'],48:['雾凇','Rime fog'],
+  51:['轻微毛毛雨','Light drizzle'],53:['毛毛雨','Drizzle'],55:['浓毛毛雨','Dense drizzle'],
+  56:['轻微冻雨','Light freezing drizzle'],57:['浓冻雨','Dense freezing drizzle'],
+  61:['小雨','Light rain'],63:['中雨','Moderate rain'],65:['大雨','Heavy rain'],
+  66:['轻微冻雨','Light freezing rain'],67:['强冻雨','Heavy freezing rain'],
+  71:['小雪','Light snow'],73:['中雪','Moderate snow'],75:['大雪','Heavy snow'],77:['雪粒','Snow grains'],
+  80:['阵雨','Rain showers'],81:['中阵雨','Moderate showers'],82:['强阵雨','Violent showers'],
+  85:['小阵雪','Light snow showers'],86:['大阵雪','Heavy snow showers'],
+  95:['雷阵雨','Thunderstorm'],96:['雷阵雨伴冰雹','Thunderstorm with hail'],99:['强雷暴伴冰雹','Severe thunderstorm with hail']
+};
+
+function wdesc(code, lang){
+  var v = WMO[code] || ['未知','Unknown'];
+  return lang === 'zh' ? v[0] : v[1];
+}
+function windDir(deg){ return deg == null ? '' : deg; }
+function uvLabel(uv, lang){
+  if(uv == null) return '—';
+  var n = Number(uv);
+  var zh = n < 3 ? '弱' : n < 6 ? '中等' : n < 8 ? '强' : n < 11 ? '很强' : '极强';
+  var en = n < 3 ? 'Low' : n < 6 ? 'Moderate' : n < 8 ? 'High' : n < 11 ? 'Very high' : 'Extreme';
+  return n.toFixed(1) + ' · ' + (lang === 'zh' ? zh : en);
+}
+var WD_ZH = ['日','一','二','三','四','五','六'];
+function fmtDay(iso, lang){
+  var d = new Date(iso + 'T00:00:00');
+  var m = d.getMonth() + 1, day = d.getDate();
+  if(lang === 'zh') return m + '/' + day + ' 周' + WD_ZH[d.getDay()];
+  var en = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][d.getDay()];
+  return en + ' ' + m + '/' + day;
+}
+var TRIP = ['2026-09-27','2026-09-28','2026-09-29','2026-09-30','2026-10-01'];
+
+function renderWeather(){
+  if(!WX.data) return;
+  var lang = document.documentElement.getAttribute('data-lang') || 'zh';
+  var d = WX.data, c = d.current;
+  var nowBox = document.getElementById('wx-now-box');
+
+  var t = Math.round(c.temperature_2m);
+  var feels = Math.round(c.apparent_temperature);
+  var desc = wdesc(c.weather_code, lang);
+  var rain = c.precipitation > 0 ? c.precipitation.toFixed(1) + ' mm' : (lang === 'zh' ? '无' : 'None');
+  var tz = d.timezone_abbreviation;
+  var upd = (c.time || '').replace('T',' ');
+
+  var L = function(zh, en){ return lang === 'zh' ? zh : en; };
+
+  nowBox.innerHTML =
+  '<div class="wx-now">'
+  + '<div class="wx-flex">'
+  +   '<div class="wx-temp">' + t + '<sup>°C</sup></div>'
+  +   '<div class="wx-desc">'
+  +     '<div class="t">' + desc + '</div>'
+  +     '<div class="s">' + L('度假村实时温度','Live at the resort') + ' · ' + L('体感','Feels like') + ' ' + feels + '°C</div>'
+  +     '<div class="s" style="margin-top:3px;font-size:12px;opacity:.85">' + upd + ' (' + tz + ') · Open-Meteo</div>'
+  +   '</div>'
+  + '</div>'
+  + '<div class="wx-stats">'
+  +   '<div><div class="l">' + L('体感温度','Feels like') + '</div><div class="n">' + feels + '°C</div></div>'
+  +   '<div><div class="l">' + L('相对湿度','Humidity') + '</div><div class="n">' + c.relative_humidity_2m + '%</div></div>'
+  +   '<div><div class="l">' + L('风速','Wind') + '</div><div class="n">' + Math.round(c.wind_speed_10m) + ' km/h</div></div>'
+  +   '<div><div class="l">' + L('紫外线','UV index') + '</div><div class="n" style="font-size:14px">' + uvLabel(c.uv_index, lang) + '</div></div>'
+  +   '<div><div class="l">' + L('当前降水','Precipitation') + '</div><div class="n">' + rain + '</div></div>'
+  + '</div>'
+  + '</div>';
+
+  /* multi-day */
+  var box = document.getElementById('wx-days');
+  var html = '';
+  for(var i = 0; i < d.daily.time.length; i++){
+    var ds = d.daily.time[i];
+    var isTrip = TRIP.indexOf(ds) > -1;
+    var mx = Math.round(d.daily.temperature_2m_max[i]);
+    var mn = Math.round(d.daily.temperature_2m_min[i]);
+    var pp = d.daily.precipitation_probability_max[i];
+    html += '<div class="wx-day' + (isTrip ? ' trip' : '') + '">'
+      + (isTrip ? '<div class="badge">' + L('入住中','Your stay') + '</div>' : '')
+      + '<div class="d">' + fmtDay(ds, lang) + '</div>'
+      + '<div class="w">' + wdesc(d.daily.weather_code[i], lang) + '</div>'
+      + '<div class="r">' + mx + '° <span class="lo">/ ' + mn + '°</span></div>'
+      + (pp != null ? '<div class="p">' + L('降水','Rain') + ' ' + pp + '%</div>' : '')
+      + '</div>';
+  }
+  box.innerHTML = html;
+
+  /* hourly (next 12h from now) */
+  var nowIso = (c.time || '').slice(0,13);
+  var startIdx = 0;
+  for(var j = 0; j < d.hourly.time.length; j++){
+    if(d.hourly.time[j].slice(0,13) >= nowIso){ startIdx = j; break; }
+  }
+  var hh = '';
+  var shown = 0;
+  for(var k = startIdx; k < d.hourly.time.length && shown < 14; k++){
+    if(d.hourly.time[k].slice(0,10) !== (c.time||'').slice(0,10)) break;
+    var h = d.hourly.time[k].slice(11,16);
+    hh += '<div><div class="h">' + h + '</div>'
+      + '<div class="t">' + Math.round(d.hourly.temperature_2m[k]) + '°</div>'
+      + '<div class="p">' + (d.hourly.precipitation_probability[k] || 0) + '%</div></div>';
+    shown++;
+  }
+  if(shown > 0){
+    document.getElementById('wx-hourly-note').style.display = 'block';
+    document.getElementById('wx-hour').innerHTML = hh;
+  }
+
+  /* dynamic clothing tip */
+  var tipZh, tipEn;
+  var rainNow = (d.daily.precipitation_probability_max[0] || 0);
+  if(t >= 30){
+    tipZh = '今天 <b>' + t + '°C</b>，闷热。穿速干短袖 + 透气长裤，随身带水，正午 12–15 点尽量待在室内。防晒霜、遮阳帽必备。';
+    tipEn = '<b>' + t + '°C</b> and muggy. Wear a quick-dry T-shirt with breathable trousers, carry water, and stay indoors around midday. Sunscreen and a hat are essential.';
+  } else if(t >= 26){
+    tipZh = '今天 <b>' + t + '°C</b>，偏热。短袖 + 薄长裤最舒服；户外运动请穿运动鞋并备一套换洗衣物。';
+    tipEn = '<b>' + t + '°C</b> and warm. A T-shirt with light trousers works best; wear trainers for sports and bring a spare set of clothes.';
+  } else if(t >= 20){
+    tipZh = '今天 <b>' + t + '°C</b>，舒适。短袖或薄长袖均可，早晚加一件薄外套；泳池与室内空调区温差不小。';
+    tipEn = '<b>' + t + '°C</b> and pleasant. Short or light long sleeves both work; add a light layer for the evening, and note the temperature gap around the pool and air-conditioned areas.';
+  } else {
+    tipZh = '今天 <b>' + t + '°C</b>，偏凉。建议长袖 + 薄外套，清晨户外活动注意保暖。';
+    tipEn = '<b>' + t + '°C</b> and cool. Long sleeves plus a light jacket; keep warm for early outdoor sessions.';
+  }
+  if(rainNow >= 50){
+    tipZh += '<br><b>降水概率 ' + rainNow + '%，务必带伞或轻便雨衣。</b>室外项目可能临时调整，可改参加室内泳池、室内攀岩、VR 等。';
+    tipEn += '<br><b>Rain probability ' + rainNow + '% — bring an umbrella or light rain jacket.</b> Outdoor sessions may shift; the indoor pool, indoor climbing and VR are good fallbacks.';
+  } else if(rainNow >= 25){
+    tipZh += '<br>降水概率 ' + rainNow + '%，建议把折叠伞放进包里。';
+    tipEn += '<br>Rain probability ' + rainNow + '% — keep a folding umbrella in your bag.';
+  }
+  document.getElementById('wx-tip-zh').innerHTML = tipZh;
+  document.getElementById('wx-tip-en').innerHTML = tipEn;
+}
+
+fetch(WX_URL)
+  .then(function(r){ if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then(function(j){ WX.data = j; renderWeather(); })
+  .catch(function(e){
+    document.getElementById('wx-now-box').innerHTML =
+      '<div class="card"><div class="wx-loading">'
+      + '<span class="lang-zh">实时天气暂时无法获取，请检查网络后下拉刷新，或直接查看 <b>中国天气网</b>（桂林市雁山区）。</span>'
+      + '<span class="lang-en">Live weather is temporarily unavailable. Check your connection and reload, or check a local weather service for Yanshan District, Guilin.</span>'
+      + '</div></div>';
+  });
+</script>
+</body>
+</html>
